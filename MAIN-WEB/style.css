@@ -1,0 +1,400 @@
+body.the-spring-new:not(.spring-direct-adane)
+        .monthly-subscription.toggle-buttons {
+        display: none;
+      }
+    </style>
+    <style type="text/css">
+      .site-wide-banner {
+        background: #ffca0a !important;
+        color: #333232 !important;
+        font-size: 16px !important;
+        font-weight: 500;
+      }
+      .site-wide-banner span {
+        letter-spacing: 7%;
+      }
+      .site-wide-banner .button {
+        background: #fff !important;
+        border: solid 1px #333232 !important;
+        color: #333232 !important;
+        border-radius: 4px !important;
+      }
+      .cookie-banner-active .site-wide-banner {
+        top: 62px;
+      }
+      body.infosite-page-donate\/the-spring .site-wide-banner,
+      body.infosite-page-donate\/water-project-sponsorship .site-wide-banner,
+      body.infosite-page-donate .site-wide-banner,
+      body.infosite-page-wwd23-paid .site-wide-banner,
+      body.infosite-page-the-spring\/direct .site-wide-banner,
+      body.infosite-page-the-spring-direct-1 .site-wide-banner {
+        display: none;
+      }
+
+.cw-footer .mailing-list-and-info .infosite-mailing-list-form form {
+    margin-top: 0 !important;
+  }
+  .cw-footer
+    .mailing-list-and-info
+    .infosite-mailing-list-form
+    form
+    .mailing-input-wrapper.email {
+    min-width: 150px;
+    margin-top: -1px !important;
+  }
+  @media only screen and (min-width: 641px) {
+    .cw-footer
+      .mailing-list-and-info
+      .infosite-mailing-list-form
+      form
+      .mailing-input-wrapper.email {
+      margin-top: 0 !important;
+      margin-left: -1px !important;
+    }
+  }
+  .cw-footer
+    .mailing-list-and-info
+    .infosite-mailing-list-form
+    form
+    .mailing-list-sign-up-button {
+    margin-top: 0 !important;
+  }
+
+  .profile-campaign-details a.edit-trigger {
+    display: none !important;
+    opacity: 0;
+  }
+  .profile-intro .default-option {
+    font-size: 11px !important;
+  }
+  @media (min-width: 1025px) {
+    .profile-intro .default-option {
+      text-align: center !important;
+    }
+  }
+
+  #builder-page
+        .builder-component-9db406ad5c144184b4b9f4c142f28862
+        .cw-match-badge,
+      #builder-page
+        .builder-component-a0ece1c39613453591f5a22234be1d3e
+        .cw-match-badge {
+        display: none !important;
+      }
+      #builder-page
+        .builder-component-9db406ad5c144184b4b9f4c142f28862
+        .hero-accordion
+        div,
+      #builder-page
+        .builder-component-a0ece1c39613453591f5a22234be1d3e
+        .hero-accordion
+        div {
+        pointer-events: none !important;
+      }
+
+      .generic-section-our-work {
+        padding-top: 20px !important;
+        padding-bottom: 0px !important;
+      }
+      .generic-section-our-work .button {
+        display: none;
+      }
+      @media (min-width: 1025px) {
+        .generic-section-our-work {
+          padding-top: 60px !important;
+          padding-bottom: 20px !important;
+        }
+      }
+      .cw-infosit-homepage .hero--text .hero--header {
+        font-size: 33px;
+      }
+      .cw-infosit-homepage .hero--video-donate-form:after {
+        margin-top: -40px;
+        padding-bottom: 80%;
+      }
+      @media screen and (min-width: 500px) {
+        .cw-infosit-homepage .hero--video-donate-form:after {
+          margin-top: -140px;
+          padding-bottom: 66%;
+        }
+      }
+      @media only screen and (max-width: 641px) {
+        .cw-infosit-homepage .donate-form-wrapper .adf-form-header {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+      .cw-infosit-homepage .trust-banner-mobile-spacing {
+        margin-top: -150px !important;
+      }
+      @media screen and (min-width: 641px) {
+        .cw-infosit-homepage .trust-banner-mobile-spacing {
+          margin-top: -80px !important;
+        }
+      }
+      @media screen and (min-width: 1025px) {
+        .cw-infosit-homepage .home-slider-updated .swiper-wrapper {
+          flex-wrap: wrap;
+          max-width: 1250px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 40px;
+        }
+        .cw-infosit-homepage .home-slider-updated .swiper-slide {
+          flex: 1;
+          margin-right: 20px;
+        }
+        .cw-infosit-homepage .home-slider-updated .swiper-slide:nth-child(3) {
+          margin-right: 0;
+        }
+        .cw-infosit-homepage
+          .home-slider-updated
+          .swiper-slide
+          .text-center.md-text-left {
+          text-align: center !important;
+        }
+        .cw-infosit-homepage
+          .home-slider-updated
+          .swiper-slide
+          .mx-auto.md-ml-0 {
+          margin-left: auto !important;
+        }
+        .cw-infosit-homepage .home-slider-updated .story-selector-wrapper {
+          margin: 0 !important;
+          display: block !important;
+          padding: 0 !important;
+          background-color: transparent !important;
+        }
+        .cw-infosit-homepage .home-slider-updated .story-selector-media-16-9 {
+          width: 100%;
+          height: 240px;
+          padding: 0;
+          left: 0 !important;
+        }
+      }
+      .cw-infosit-homepage .community-member div:nth-child(1) div + p {
+        word-break: break-word;
+      }
+      @media only screen and (max-width: 641px) {
+        .cw-infosit-homepage .get-involved-video {
+          transform: scale(1.25);
+          margin-top: 2.5vh;
+        }
+      }
+      .cw-infosit-homepage .get-involved-video.video-wrapper video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      @media only screen and (min-width: 1025px) {
+        .cw-infosit-homepage .cw-footer {
+          margin-top: 120px;
+        }
+      }
+
+      
+      /* slider styles */
+      @keyframes vertical-slide {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translate3d(0, -100%, 0);
+        }
+      }
+      @keyframes the-electric-slide {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translate3d(-100%, 0, 0);
+        }
+      }
+      .wrapper {
+        min-height: auto;
+        overflow: visible;
+      }
+      .bg-aqua-spring {
+        background-color: #f4fbfc;
+      }
+      .text-aqua-spring {
+        color: #f4fbfc;
+      }
+      .bg-green-pea {
+        background-color: #236050;
+      }
+      .text-green-pea {
+        color: #236050;
+      }
+      .bg-opal {
+        background-color: #a7c6bc;
+      }
+      .text-opal {
+        color: #a7c6bc;
+      }
+      .bg-catskill-white {
+        background-color: #eaf4f5;
+      }
+      .text-catskill-white {
+        color: #eaf4f5;
+      }
+      .bg-polar {
+        background-color: #d8e4e9;
+      }
+      .text-polar {
+        color: #d8e4e9;
+      }
+      @media (prefers-reduced-motion) {
+        .animated-element {
+          animation: none !important;
+        }
+      }
+      .animation-paused {
+        animation-play-state: paused;
+      }
+
+      
+      .eoyg-hero-media {
+        height: 333px;
+      }
+      @media only screen and (min-width: 1025px) {
+        .eoyg-hero-media {
+          height: auto;
+        }
+      }
+      .eoyg-main-header {
+        max-width: 300px !important;
+      }
+      .eoyg-hero-image {
+        background-image: url("../../cw-contentful-assets.imgix.net/https_/images.ctfassets.net/wvozpes63uc8/47Vh8lKLq4FzFCTrQlBUcP/1a1e0b7d205a7f6b2dd37226e3008a6f/horizontal-1x80f2.png?ixlib=rails-4.1.0&amp;auto=format&amp;w=2000&amp;fm=png&amp;s=96f550a25cddea364ab0571fe3789632");
+        animation: the-electric-slide 120s linear infinite;
+        mix-blend-mode: darken;
+        background-size: cover;
+        width: 1506px;
+        height: 393px;
+      }
+      .eoyg-hero-image:before {
+        background-image: url("../../cw-contentful-assets.imgix.net/https_/images.ctfassets.net/wvozpes63uc8/47Vh8lKLq4FzFCTrQlBUcP/1a1e0b7d205a7f6b2dd37226e3008a6f/horizontal-1x80f2.png?ixlib=rails-4.1.0&amp;auto=format&amp;w=2000&amp;fm=png&amp;s=96f550a25cddea364ab0571fe3789632");
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        mix-blend-mode: darken;
+        background-size: cover;
+        width: 1506px;
+        height: 393px;
+      }
+      @media only screen and (min-width: 1025px) {
+        .eoyg-hero-image {
+          animation-name: vertical-slide;
+          padding-bottom: 636.6%;
+          background-image: url("../../cw-contentful-assets.imgix.net/https_/images.ctfassets.net/wvozpes63uc8/3VUUyZ59jSGBU0J0teBMcr/6663457da339eae940e4129357bc5881/vertical-1xc5a7.png?ixlib=rails-4.1.0&amp;auto=format&amp;w=2000&amp;fm=png&amp;s=297ed36b96c4efb0296682269ab45a33");
+          height: 0;
+          background-size: 100%;
+        }
+        .eoyg-hero-image:before {
+          left: 0;
+          top: 100%;
+          padding-bottom: 636.6%;
+          background-image: url("../../cw-contentful-assets.imgix.net/https_/images.ctfassets.net/wvozpes63uc8/3VUUyZ59jSGBU0J0teBMcr/6663457da339eae940e4129357bc5881/vertical-1xc5a7.png?ixlib=rails-4.1.0&amp;auto=format&amp;w=2000&amp;fm=png&amp;s=297ed36b96c4efb0296682269ab45a33");
+          background-size: 100%;
+          width: 100%;
+          height: 0;
+        }
+      }
+      .lg-max-w-50 {
+        max-width: 550px;
+        margin: 0px auto;
+      }
+      @media (min-width: 1025px) {
+        .lg-max-w-50 {
+          max-width: 50%;
+          margin-left: 0;
+        }
+      }
+      .trust-banner {
+        width: 818px;
+      }
+      .trust-banner-bubble {
+        position: relative;
+        background: #d5f5e3;
+        border-radius: 0.25rem;
+        border: 1px solid #e9eae4;
+      }
+      .tbb-triangle:before {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        left: 50%;
+        bottom: -41px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #e9eae4;
+        border-bottom: 20px solid transparent;
+        margin-left: -20px;
+      }
+      .tbb-triangle:after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 0;
+        left: 50%;
+        bottom: -40px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #d5f5e3;
+        border-bottom: 20px solid transparent;
+        margin-left: -20px;
+      }
+
+      .hero--video-donate-form {
+        --hero_image: url(cw-contentful-assets.imgix.net/https_/images.ctfassets.net/wvozpes63uc8/6UwRvEJh2ICKRO4LhCOg5s/da236bb3e28b945ff3748a378c6ec2af/hp-hero-light2c8b.jpg?ixlib=rails-4.1.0&amp;auto=format&amp;w=1920&amp;s=7a1b74620817e648c9f4b207c1ab4b3b);
+        --hero_bg_color: #d2dcdd;
+        --hero_text_color: #333232;
+      }
+
+      @media only screen and (min-width: 641px) {
+        .hero--video-donate-form {
+          --hero_image: url(cw-contentful-assets.imgix.net/https_/images.ctfassets.net/wvozpes63uc8/6UwRvEJh2ICKRO4LhCOg5s/da236bb3e28b945ff3748a378c6ec2af/hp-hero-light2c8b.jpg?ixlib=rails-4.1.0&amp;auto=format&amp;w=1920&amp;s=7a1b74620817e648c9f4b207c1ab4b3b);
+          --hero_bg_color: #d2dcdd;
+          --hero_text_color: #333232;
+        }
+      }
+
+      @media only screen and (min-width: 1025px) {
+        .hero--video-donate-form {
+          --hero_text_color: #fff;
+          --hero_bg_color: #000;
+        }
+
+        .hero--video-overlay {
+          --hero_bg_color: #000;
+        }
+      }
+      /* FURTHER STYLING */
+      #logo {
+        position: absolute;
+        display: inline-block;
+        width: 25%;
+        justify-content: center;
+        align-items: center;  
+        left: 50px;    
+      }
+
+      .logo img {
+        width: 196px;
+        height: 90px;
+        image-rendering: -moz-crisp-edges;         /* Firefox */
+image-rendering:   -o-crisp-edges;         /* Opera */
+image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+image-rendering: crisp-edges;
+-ms-interpolation-mode: nearest-neighbor; 
+      }
+
+      .float-right {
+        float:right;
+      }
