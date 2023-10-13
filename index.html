@@ -44,6 +44,95 @@
     <link rel="stylesheet" href="vite/assets/print-fd516205.css" media="print" />
     <link rel="stylesheet" href="cdn.icomoon.io/46248/CWIcons/style-cf.css" media="screen,print"/>
     <link rel="stylesheet" href="style.css" media="screen,print"/>
+  
+    <style>
+         /* Styles for the waitlist form */
+         #top-header .row {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        #top-header {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            transform: translateY(-100%);
+            opacity: 0;
+            display: none; /* Hidden by default */
+        }
+
+        #top-header input[type="email"],
+        #top-header input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+
+        #top-header input[type="submit"] {
+            background-color: #5271ff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #top-header input[type="submit"]:hover {
+            background-color: #3b49a5;
+        }
+
+        /* Close button styles */
+        .close-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+            font-weight: 600;
+            background-color: #222021;
+            padding: 10px;
+            border-radius: 50px;
+            color: #ffde59;
+        }
+
+
+         /* CSS for Payment Options */
+    label[for="bankTransfer"], label[for="paypal"], label[for="termsAndConditions"]{
+        display: inline-block;
+        margin-right: 40px; /* Add spacing between options */
+    }
+
+    /* CSS for Terms & Conditions Link */
+    #termsLink {
+        display: inline-block;
+        margin-top: 10px; /* Add spacing below the link */
+    }
+
+    .bgcolor-white {
+        background: #fff;
+    }
+
+    /* Style for the PayPal link */
+    .paypal-link {
+        text-decoration: none; /* Remove default link style */
+        background-color: #4CAF50; /* Green color (you can use any color you prefer) */
+        color: #fff; /* Text color */
+        padding: 5px 15px; /* Padding around text */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); /* Box shadow */
+        display: inline-block; /* Display as inline-block to contain the arrow */
+    }
+
+    #paypalLink a:hover {
+        color: #ffde59;
+    }
+
+    /* Style for the right arrow */
+    .paypal-link span {
+        margin-left: 5px; /* Add space between text and arrow */
+    }
+
+
+    </style>
   </head>
 
 
@@ -113,7 +202,7 @@
                     <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="about/">Vision, Mission & Values</a>
                     <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="about/">Meet the founder</a>
                     <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="about/">Our Team</a>
-                      <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="">Registrations</a >
+                      <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="">Accreditations</a >
                   </span>
                   <span class="block flex-1 py-3 px-3 grid items-center justify-center gap-4 bg-grey-5 rounded-r"><a
                       class="block bg-cw-white relative p-2 normal-case tracking-normal text-xs whitespace-normal text-center hover-bg-cw-white rounded" href="about.html">
@@ -141,14 +230,13 @@
                       <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="/news-events">Blog</a>
                       <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1"  href="/publications">Publications</a>
                   </span>
-                  <span class="block flex-1 py-3 px-3 grid items-center justify-center gap-4 grid-cols-2 bg-grey-5 rounded-r">
-                    <a class="block bg-cw-white relative p-2 normal-case tracking-normal text-xs whitespace-normal text-center hover-bg-cw-white rounded"  href="/downloads/laf-brochure.pdf">
-                      <span class="absolute w-full h-full border border-solid border-cw-secondary-100 super-link-bg rounded">
-                      </span>
-                        <span class="block text-cw-black relative z-20">We've put general information about LAF in a brochure</span>
-                        <span class="block mt-2 text-cw-navy underline relative z-20 uppercase tracking-wide super-box-link-anchor font-medium">Download here</span></a>
-                      </span>
+                  <span class="block flex-1 py-3 px-3 grid items-center justify-center gap-4 bg-grey-5 rounded-r"><a
+                    class="block bg-cw-white relative p-2 normal-case tracking-normal text-xs whitespace-normal text-center hover-bg-cw-white rounded" href="about.html">
+                    <span class="absolute w-full h-full border border-solid border-cw-secondary-100 super-link-bg rounded"></span>
+                    <span class="block text-cw-black relative z-20">We've put general information about LAF in a brochure</span>
+                    <span class="block mt-2 text-cw-navy underline relative z-20 uppercase tracking-wide super-box-link-anchor font-medium">Download here</span></a>
                   </span>
+                  
               </li>
 
             </ul>
@@ -504,16 +592,45 @@
                     1. Grief Management 
                   </p>
                   <p class="balance-text mx-auto mt-2">
-                   Working with our partners, we provide professional counseling, mentoring and other related forms of support to help beneficiaries better manage their grief. Our counseling and faith-based services help address the emotional and psychological needs of beneficiaries. By so doing, we are building a community of recipients who will in turn share, counsel and mentor others in the safe space of our network. 
-
+                    Counseling, mentoring and other related forms of support
                   </p>
                    <p class="balance-text mx-auto mt-2 font-bold">
                     2. Legal support
                   </p>
                   <p class="balance-text mx-auto mt-2">
-                    We provide legal services to help beneficiaries manage legal matters directly related to the loss of their spouse, such as highlighting, explaining and assisting them to access their legal rights. These include inheritance, property ownership, child custody , etc.
-
+                    For situations directly related to the loss of a spouse 
                   </p>
+                  <p class="balance-text mx-auto mt-2 font-bold">
+                    3. Financial/business management 
+                  </p>
+                  <p class="balance-text mx-auto mt-2">
+                    Livelihood assistance & advice, skills acquisition, business support                   </p>
+                  <p class="balance-text mx-auto mt-2 font-bold">
+                    4. Adoption
+                  </p>
+                  <p class="balance-text mx-auto mt-2">
+                    Financial, educational, medical, mentoring, housing, business sponsorships                   </p>
+                  <p class="balance-text mx-auto mt-2 font-bold">
+                    5. Socio-cultural Advisory
+                  </p>
+                  <p class="balance-text mx-auto mt-2">
+                    Basic techniques on navigating in-laws and community issues etc.                  </p>
+                  <p class="balance-text mx-auto mt-2 font-bold">
+                    6. Education
+                  </p>
+                  <p class="balance-text mx-auto mt-2">
+                    Provision of scholarships and related assistance to qualified dependents                  </p>
+                  <p class="balance-text mx-auto mt-2 font-bold">
+                    7. Medical
+                  </p>
+                  <p class="balance-text mx-auto mt-2">
+                    Health Insurance, mental health, psychotherapy etc                   </p>
+                  <p class="balance-text mx-auto mt-2 font-bold">
+                    8. Shelter
+                  </p>
+                  <p class="balance-text mx-auto mt-2">
+                    Short-term arrangements for critical cases of displacement                  </p>
+                  
                   
                   <div class="donate-form-container mt-3">
                     <div class="donate-form-nested-container">
@@ -550,9 +667,7 @@
                 Hear from our beneficiaries
               </h3>
               <p class="text-grey-60 mt-2">
-                Beneficiaries are nominated to our 
-programs by individuals or organizations through a rigorous 
-verification process established by LAF. Some of those who have been a part of the program share their inspiring stories below:
+                Some of those who have been a part of the program share their inspiring stories below:
               </p>
             </div>
             <div class="cards row md-mt-4 pt-1">
@@ -632,9 +747,115 @@ verification process established by LAF. Some of those who have been a part of t
               </div>
             </div>
           </div>
+
+
+          <section class="get-involved-section">
+            <h2>Get Involved</h2>
+            <ul>
+              <li>
+                <h3>Send Us Donations</h3>
+                <p>Reach out and touch somebody’s life today. Give somebody hope and comfort by donating to the foundation</p>
+                <a href="#" class="donate-button" id="book-button">Donate</a>
+                <!-- Pop-up for Transfers & Checks -->
+                <div class="popup">
+                  <h4>Transfers & Checks</h4>
+                  <p>Bank Name: Signature Bank/United Bank of Africa (UBA)</p>
+                  <p>Account Number: 0123456789</p>
+                  <p>Account Name: Living Afresh Foundation</p>
+                  <p>Sort/Swift Code: 076191257</p>
+                </div>
+                <!-- End of Pop-up for Transfers & Checks -->
+                <!-- Link to the Donate Page -->
+                <a href="donate.html" class="online-donation-link">Online</a>
+              </li>
+              <li>
+                <h3>Volunteer</h3>
+                <p>Are you interested in joining us to provide support, services, and advocacy to individuals who have lost their spouses? Please contact us.</p>
+                <a href="contact.html" class="join-us-button">Join Us</a>
+              </li>
+              <li>
+                <h3>Partner With Us</h3>
+                <p>Support us in helping LAF beneficiaries alleviate the challenges associated with losing a spouse</p>
+                <a href="contact.html" class="get-in-touch-button">Get in Touch</a>
+              </li>
+            </ul>
+          </section>
+          
         </div>
       </div>
     
+      <div class="top-header" id="top-header">
+        <span class="close-button" id="close-button">✕</span>
+        <div class="row padding1">
+            <div class="three columns">Limited space available. Registeration will only be open for five days to fill the 50 spots in this cohort from all  over the world.</div>
+            <div class="nine columns">
+                <form action="form-processor.php" method="post">
+                    <div class="row">
+                        <div class="four columns">
+                            <input class="u-full-width" type="text" placeholder="Student's Full Name" name="name" id="exampleEmailInput" required>
+                        </div>
+                        <div class="four columns">
+                            <input class="u-full-width" type="email" placeholder="Email" name="email" id="exampleEmailInput" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="eight columns padding1 bgcolor-white border-rounded3">
+                            <div class="row">
+                            <label>Choose Payment Method (Cost: $75/participant)</label>
+                            <div class="row">
+                                   <input type="radio" id="bankTransfer" name="paymentMethod" value="Bank Transfer" required>
+                                   <label for="bankTransfer">
+                                       <img src="./bank-transfer-logo.png" alt="Bank Transfer" width="80">
+                                   </label>
+                                   <input type="radio" id="paypal" name="paymentMethod" value="Paypal" required>
+                                   <label for="paypal">
+                                       <img src="./paypay-logo.png" alt="Paypal" width="100">
+                                   </label>
+                               </div>
+                               <div class="row">
+                                   <div class="four colums">
+                                        
+                                       <div id="bankDetails" style="display: none">
+                                       <hr>
+                                           <p> Banking details: <strong>Researchinked PTY </strong><br/>
+                                               Bank: <strong>Standard </strong><br/>
+                                               Acct number: <strong>R10142160758 </strong><br/>
+                                               Acct type: <strong>RBIZ LAUNCH </strong><br/>
+                                               Ref: <strong>Student Full Name </strong>
+                                           </p>
+                                       
+
+                                       </div>
+                                       <div id="paypalLink" style="display: none">
+                                       <hr>
+                                           <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BAK8YRBTGAMKL " class="paypal-link" target="_blank">
+                                               Click here to proceed to pay securely with Paypal <span>&rarr;</span>
+                                           </a>
+                                       </div>
+                                   </div>
+                               </div>
+                            </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <input type="checkbox" id="termsAndConditions" name="agreeToTerms" required>
+                                    <label for="termsAndConditions">Add me to the waitlist WhatsApp Group <a href="#" id="termsLink">Terms & Conditions.</a></label>
+                                    <p><em>*Kindly note that regisration form will only be posted <strong> ONLY </strong> on the WhatsApp group!</em></p>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="twelve columns">
+                            <input class="button-primary" type="submit" value="I'm Interested!">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
       <footer class="cw-footer no-top-border">
         <div
           class="mailing-list-and-info w-full bg-grey-5 text-center flex flex-col border-b border-r border-l border-solid border-0 border-grey-30 rounded-b lg-flex-row lg-text-left items-center"
@@ -1887,7 +2108,31 @@ verification process established by LAF. Some of those who have been a part of t
           });
         });
       </script>
+
+      <!-- JavaScript to show/hide modal -->
+<script>
+  const termsLink = document.getElementById("termsLink");
+  const termsModal = document.getElementById("termsModal");
+  const closeModal = document.getElementsByClassName("close-modal")[0];
+
+  termsLink.addEventListener("click", function () {
+      termsModal.style.display = "block";
+  });
+
+  closeModal.addEventListener("click", function () {
+      termsModal.style.display = "none";
+  });
+</script>
+
+<script type="text/javascript">
+$('#paypal').click(function() {
+  fbq('track', 'Purchase', {currency: "USD", value: 75.00});
+});
+
+ $('#bankTransfer').click(function() {
+  fbq('track', 'Purchase', {currency: "USD", value: 75.00});
+});
+</script>
     </div>
   </body>
-  <!-- Mirrored from www.charitywater.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Aug 2023 15:10:57 GMT -->
 </html>
