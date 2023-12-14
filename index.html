@@ -44,6 +44,15 @@
     <link rel="stylesheet" href="vite/assets/print-fd516205.css" media="print" />
     <link rel="stylesheet" href="cdn.icomoon.io/46248/CWIcons/style-cf.css" media="screen,print"/>
     <link rel="stylesheet" href="style.css" media="screen,print"/>
+    <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  
+  <!-- Slick Carousel JS -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   
     <style>
          /* Styles for the waitlist form */
@@ -147,14 +156,13 @@
             <span class="cw-text">Living Afresh Foundation</span>
           </a>
         </li>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/interventions">Interventions</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/volunteer">Volunteer</a></li>
-        <li> <a href="/sponsorship">Sponsor a Project</a></li>
-        <li><a href="/resources">Resources</a></li>
+        <li><a href="/about.php">About Us</a></li>
+        <li><a href="#">Interventions</a></li>
+        <li><a href="#">Volunteer</a></li>
+        <li> <a href="#">Sponsor a Project</a></li>
+        <li><a href="#">Resources</a></li>
         <li class="has-form user-access">
-          <a class="button" href="account/">Sign in</a>
+          <a class="button" href="login.php">Sign in</a>
         </li>
       </ul>
     </aside>
@@ -176,7 +184,7 @@
             <ul class="logo-area">
               <li class="logo"></li>
               <li class="mobile-donate button-links">
-                <a href="/donate">Donate</a>
+                <a href="donate.php">Donate</a>
               </li>
               <li class="offcanvas-open-link off-canvas-toggle">
                 <a><span class="cw-icon-reorder icn"></span></a>
@@ -199,13 +207,13 @@
                 <span class="dropdown bg-cw-white border border-solid border-cw-secondary-100 leading-normal left-0 rounded super-dropdown-container">
                   <span class="dropdown-border-nub block absolute"></span>
                   <span class="block bg-cw-white py-3 border-0 border-solid border-r border-cw-secondary-100 rounded-l w-1/2">
-                    <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="about/">Vision, Mission & Values</a>
-                    <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="about/">Meet the founder</a>
-                    <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="about/">Our Team</a>
+                    <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="about.php">Vision, Mission & Values</a>
+                    <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="people.php">Meet the founder</a>
+                    <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="about.php#team">Our Team</a>
                       <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="">Accreditations</a >
                   </span>
                   <span class="block flex-1 py-3 px-3 grid items-center justify-center gap-4 bg-grey-5 rounded-r"><a
-                      class="block bg-cw-white relative p-2 normal-case tracking-normal text-xs whitespace-normal text-center hover-bg-cw-white rounded" href="about.html">
+                      class="block bg-cw-white relative p-2 normal-case tracking-normal text-xs whitespace-normal text-center hover-bg-cw-white rounded" href="about.php">
                       <span class="absolute w-full h-full border border-solid border-cw-secondary-100 super-link-bg rounded"></span>
                       <span class="block text-cw-black relative z-20" >We are governed by a board of reputable individuals.</span>
                       <span class="block mt-2 text-cw-navy underline relative z-20 uppercase tracking-wide super-box-link-anchor font-medium">See Board of Trustees</span></a>
@@ -214,21 +222,21 @@
               </li>
               <li class="no-dropdown">
                 <div class="flex h-full items-center">
-                  <a href="/interventions">Interventions</a>
+                  <a href="interventions.php">Interventions</a>
                 </div>
               </li>
               <li class="has-dropdown">
                 <span class="absolute bg-transparent z-10 nav-hover-extender"></span>
                 <span class="flex items-center dropdown-parent-link">
-                  <a class="transition-opacity relative z-20" href="/resources">Resources</a>
+                  <a class="transition-opacity relative z-20" href="resources.php">Resources</a>
                   <span class="w-1 block"></span>
                   <span class="h80 icn cw-icon-caret-down"></span></span>
                   <span class="dropdown bg-cw-white border border-solid border-cw-secondary-100 leading-normal left-0 rounded super-dropdown-container">
                     <span class="dropdown-border-nub block absolute"></span>
                     <span class="block bg-cw-white py-3 border-0 border-solid border-r border-cw-secondary-100 rounded-l w-1/3">
-                      <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="/gallery">Gallery</a>
-                      <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="/news-events">Blog</a>
-                      <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1"  href="/publications">Publications</a>
+                      <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="gallery.php">Gallery</a>
+                      <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1" href="blog.php">Blog</a>
+                      <a class="block underline font-medium transition-opacity opacity-75 hover-opacity-100 text-cw-navy hover-bg-transparent px-3 py-0 mt-1"  href="resources.php">Publications</a>
                   </span>
                   <span class="block flex-1 py-3 px-3 grid items-center justify-center gap-4 bg-grey-5 rounded-r"><a
                     class="block bg-cw-white relative p-2 normal-case tracking-normal text-xs whitespace-normal text-center hover-bg-cw-white rounded" href="about">
@@ -241,19 +249,19 @@
 
             </ul>
           </div>
-          <a class="fixed-donate button button--small" href="/support">Support</a>
+          <a class="fixed-donate button button--small" href="donate.php">Support</a>
           <div class="right-side ml-2">
             <ul class="nav-buttons donate-link">
               <li class="has-dropdown button-links sponsor-button">
-                <a href="/contact">contact us</a>
+                <a href="mailto:hello@livingafresh.org">hello@livingafresh.org</a>
               </li>
               <li class="has-dropdown button-links" >
-                <a href="/support" style="background-color: #06af3e; border: solid 2px #06af3e; padding: 4px 2rem; font-weight: 600;">Donate</a>
+                <a href="contact.php" style="background-color: #06af3e; border: solid 2px #06af3e; padding: 4px 1rem; font-weight: 600;">Contact us</a>
               </li>
             </ul>
             <ul class="mycw-nav">
               <li class="has-form user-access">
-                <a class="log-in" href="account/login.html">Sign in</a>
+                <a class="log-in" href="login.php">Sign in</a>
               </li>
             </ul>
           </div>
@@ -266,7 +274,7 @@
       </nav>
 
 
-      <div class="container p-0 text-center">
+      <div class="container p-0 text-center mb-3">
         
         <div class="hero--video-donate-form">
           <div class="hero--video-container" data-behavior="DonateVideoHero">
@@ -282,7 +290,7 @@
               </video>
             </div>
           </div>
-          <div class="row lg-flex lg-items-center relative z-30" style="margin-top: -2rem;">
+          <div class="row lg-flex lg-items-center relative z-30" style="margin-top: 1rem;">
             <div class="hero--text" style="border: solid 1px #fff; padding: 2rem; border-radius: 5px; ">
               <h1 class="hero--header balance-text mx-auto font-heading h15 lg-text-3xl">
               Welcome to Living Afresh Foundation
@@ -304,135 +312,7 @@
             </div>
 
             
-            <!--<div class="hero--donate-form flex justify-center">
-              <div class="donate-form-container">
-                <div data-component="DonateForm/DonateForm">
-                  <div class="donate-form-wrapper stripe-elements step-amount">
-                    <div>
-                      <div class="mb-2 monthly-subscription toggle-buttons w-full">
-                        <a class="toggle-one-time">One Time</a>
-                        <a class="toggle-monthly active">Monthly</a>
-                      </div>
-                    </div>
-                    <form
-                      autocomplete="off"
-                      data-logged-in-user="false"
-                      data-parsley-validate="true"
-                      data-store-utm-params-model="donation_form"
-                      id="general_form"
-                      novalidate=""
-                    >
-                     <span class="adf-form-header text-center">
-                      <span>How much would you like to give monthly?</span>
-                    </span>
-                      <div class="donate-form-body">
-                        <div>
-                          
-                          <div>
-                            <div>
-                              
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <div class="amount-wrapper">
-                            <div class="amount-buttons-wrapper">
-                              <a class="button button--grey-20 amount-button"
-                                >₦20,000<span class="amount-buttons"
-                                  >&nbsp;<span class="uppercase"></span
-                                  >/mo</span
-                                ></a
-                              ><a class="button button--grey-20 amount-button"
-                                >₦50,000<span class="amount-buttons"
-                                  >&nbsp;<span class="uppercase"></span
-                                  >/mo</span
-                                ></a
-                              ><a
-                                class="button button--grey-20 amount-button selected"
-                                >₦100,000<span class="amount-buttons"
-                                  >&nbsp;<span class="uppercase"></span
-                                  >/mo</span
-                                ></a
-                              ><a class="button button--grey-20 amount-button"
-                                >₦1,000,000<span class="amount-buttons"
-                                  >&nbsp;<span class="uppercase"></span
-                                  >/mo</span
-                                ></a
-                              ><a
-                                class="button button--grey-20 other-amount-button"
-                                >Other amount</a
-                              >
-                              <div
-                                class="input-wrapper lh donate-amount a5826748-d59d-4f86-a042-1e4c030720d5 hidden"
-                              >
-                                <label for="amount">Donation Amount</label>
-                                <div class="input-field-container">
-                                  <span class="preinput">$</span
-                                  ><input
-                                    data-amount="true"
-                                    data-parsley-currency="20000,50000"
-                                    data-parsley-error-message="The monthly minimum donation is ₦20,000"
-                                    data-parsley-errors-container=".donate-amount.a5826748-d59d-4f86-a042-1e4c030720d5 .error"
-                                    name="amount"
-                                    placeholder="Other"
-                                    required=""
-                                    step="0.01"
-                                    type="number"
-                                    value="40"
-                                  /><span class="postinput"
-                                    ><span class="uppercase">usd</span>/mo</span
-                                  >
-                                </div>
-                                <div class="error"></div>
-                              </div>
-                              <a
-                                class="amount-button button button--grey-20 w-full wps-amount-button hidden"
-                                >Sponsor an entire water project</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                        <button
-                          class="w-full button flex items-center justify-center show-next-donate-screen"
-                          id="donate-button"
-                          type="submit"
-                        >
-                          Support Today
-                        </button>
-                        <div class="form-footer whitespace-nowrap hidden">
-                          <a class="donate-by-check h80"
-                            >Give by cheque or direct bank deposit</a
-                          ><span class="80">&nbsp;•&nbsp;</span
-                          >
-                        </div>
-                      </div>
-                      <div
-                        class="inline-calculator text-xs text-cw-black p-2 border-dashed border-0 border-t border-grey-30 leading-normal"
-                      >
-                        <span class="subtext"
-                          >Your
-                          <span class="monthly-inline-calc-amount">₦20,000</span>
-                          monthly donation will help support up to
-                          <span class="monthly-inline-calc-amount">3</span>
-                          of the most vulnerable widows in Nigeria</span
-                        >
-                      </div>
-                    </form>
-                    <p class="leading-snug recaptcha-text pt-1 mx-2 md-mx-3">
-                      <i class="cw-icon-lock"></i> Secure Payment · This site is
-                      protected by reCAPTCHA and the Google
-                      <a href="https://policies.google.com/privacy"
-                        >Privacy Policy</a
-                      >
-                      and
-                      <a href="https://policies.google.com/terms"
-                        >Terms&nbsp;of&nbsp;Service</a
-                      >&nbsp;apply.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>  -->
+            
           </div>
         </div>
        
@@ -450,7 +330,7 @@
                   </p>
                 </div>
               </div>
-              <div class="row px-2 lg-px-0">
+              <div class="row px-2 lg-px-0" style="margin-top: 15rem;">
                 <div class="profile-header border-solid border-0 -mx-2 mb-3 px-2">
                   <div class="row side-by-side flex-col-reverse md-flex-row">
                     <div
@@ -567,7 +447,7 @@
               </div>
             </div>
           </div>
-          <a class="button button--outline-navy" href="our-work.html"
+          <a class="button button--outline-navy" href="interventions.php"
             >Learn more</a
           >
         </div>
@@ -578,9 +458,9 @@
             <div
               class="eoyg-homepage-hero relative bg-polar pb-5 px-2 overflow-hidden"
             >
-              <div class="pt-6 md-pt-7 row relative">
-                <div class="lg-max-w-50">
-                  <h1 class="font-heading max-w-sm mx-auto text-2xl lg-text-3xl">
+              <div class="pt-6 md-pt-7 row relative" style="text-align: left;">
+                <div class="lg-max-w-50" >
+                  <h1 class="font-heading max-w-sm mx-auto text-2xl lg-text-3xl" >
                       We have eight core areas of
                     <span
                       class="yellow-underlined"
@@ -588,48 +468,41 @@
                       >intervention</span
                     >
                   </h1>
-                  <p class="balance-text mx-auto mt-2 font-bold">
-                    1. Grief Management 
-                  </p>
-                  <p class="balance-text mx-auto mt-2">
-                    Counseling, mentoring and other related forms of support
-                  </p>
-                   <p class="balance-text mx-auto mt-2 font-bold">
-                    2. Legal support
-                  </p>
-                  <p class="balance-text mx-auto mt-2">
-                    For situations directly related to the loss of a spouse 
-                  </p>
-                  <p class="balance-text mx-auto mt-2 font-bold">
-                    3. Financial/business management 
-                  </p>
-                  <p class="balance-text mx-auto mt-2">
-                    Livelihood assistance & advice, skills acquisition, business support                   </p>
-                  <p class="balance-text mx-auto mt-2 font-bold">
-                    4. Adoption
-                  </p>
-                  <p class="balance-text mx-auto mt-2">
-                    Financial, educational, medical, mentoring, housing, business sponsorships                   </p>
-                  <p class="balance-text mx-auto mt-2 font-bold">
-                    5. Socio-cultural Advisory
-                  </p>
-                  <p class="balance-text mx-auto mt-2">
-                    Basic techniques on navigating in-laws and community issues etc.                  </p>
-                  <p class="balance-text mx-auto mt-2 font-bold">
-                    6. Education
-                  </p>
-                  <p class="balance-text mx-auto mt-2">
-                    Provision of scholarships and related assistance to qualified dependents                  </p>
-                  <p class="balance-text mx-auto mt-2 font-bold">
-                    7. Medical
-                  </p>
-                  <p class="balance-text mx-auto mt-2">
-                    Health Insurance, mental health, psychotherapy etc                   </p>
-                  <p class="balance-text mx-auto mt-2 font-bold">
-                    8. Shelter
-                  </p>
-                  <p class="balance-text mx-auto mt-2">
-                    Short-term arrangements for critical cases of displacement                  </p>
+                  <ol>
+                    <li>
+                        <p class="balance-text mx-auto mt-2 font-bold">Grief Management</p>
+                        <p class="balance-text mx-auto">Counseling, mentoring, and other related forms of support</p>
+                    </li>
+                    <li>
+                        <p class="balance-text mx-auto mt-2 font-bold">Legal Support</p>
+                        <p class="balance-text mx-auto">For situations directly related to the loss of a spouse</p>
+                    </li>
+                    <li>
+                        <p class="balance-text mx-auto mt-2 font-bold">Financial/Business Management</p>
+                        <p class="balance-text mx-auto">Livelihood assistance & advice, skills acquisition, business support</p>
+                    </li>
+                    <li>
+                        <p class="balance-text mx-auto mt-2 font-bold">Adoption</p>
+                        <p class="balance-text ">Financial, educational, medical, mentoring, housing, business sponsorships</p>
+                    </li>
+                    <li>
+                        <p class="balance-text mx-auto mt-2 font-bold">Socio-cultural Advisory</p>
+                        <p class="balance-text mx-auto">Basic techniques on navigating in-laws and community issues, etc.</p>
+                    </li>
+                    <li>
+                        <p class="balance-text mx-auto mt-2 font-bold">Education</p>
+                        <p class="balance-text ">Provision of scholarships and related assistance to qualified dependents</p>
+                    </li>
+                    <li>
+                        <p class="balance-text mx-auto mt-2 font-bold">Medical</p>
+                        <p class="balance-text mx-auto">Health Insurance, mental health, psychotherapy, etc.</p>
+                    </li>
+                    <li>
+                        <p class="balance-text mx-auto mt-2 font-bold">Shelter</p>
+                        <p class="balance-text mx-auto">Short-term arrangements for critical cases of displacement</p>
+                    </li>
+                </ol>
+                
                   
                   
                   <div class="donate-form-container mt-3">
@@ -637,7 +510,7 @@
                       <div class="donate-form-nested-wrapper">
                         <a
                         class="button button--cw-spring-med-green mb-2 homepage-primary-join-spring-button"
-                        href="/about"
+                        href="interventions.php"
                         >Learn More</a
                       >
                       </div>
@@ -659,7 +532,6 @@
           </div>
       
     
- 
           
           <div class="bg-white-5 p-3 mt-4 spring-direct-testimonials">
             <div class="max-w-sm mx-auto">
@@ -680,19 +552,10 @@
                     loading="lazy"
                   />
                   <p class="card-decription text-cw-black text-xs">
-                    “After my husband died, I 
-                    thought there was nothing 
-                    more to be here for. But 
-                    had to hang in because of 
-                    the children just getting 
-                    by without help, until I 
-                    met the LAF team in Lafia 
-                    and now I am inspired and 
-                    empowered to dream 
-                    again. Yes! My dreams are 
-                    valid”
+                    “I lost my husband and his family stripped off everything,  I thought it was all over for me because I lost all hope of getting back on my feet. Being a young widow coping with 3 children was hell for me. I didn't know where to start from until I received a call from Pastor Jerome. When I got to the venue, I was awe struck at what I saw. When I thought it was over, I was empowered. 
+                    ”
                   </p>
-                  <p class="mt-2 font-medium">Mrs Hassanatu Abdulkadri, <br/> FCT, <em>Financial/Business Management </em></p>
+                  <p class="mt-2 font-medium">Blessing Adeyemi, <br/> FCT, <em>Financial/Business Management </em></p>
                 </div>
               </div>
               <div class="card pt-4 p-2 lg-mb-0 mt-4 md-mt-0">
@@ -704,20 +567,11 @@
                     loading="lazy"
                   />
                   <p class="card-decription text-cw-black text-xs">
-                    “After my husband died, I 
-                    thought there was nothing 
-                    more to be here for. But 
-                    had to hang in because of 
-                    the children just getting 
-                    by without help, until I 
-                    met the LAF team in Lafia 
-                    and now I am inspired and 
-                    empowered to dream 
-                    again. Yes! My dreams are 
-                    valid”
+                    “Raising my children without a father was not easy. And I didn't have a steady job, all I did was small small jobs which could hardly feed us. Then I met Pastor Jerome, which was used as an instrument for the empowerment. At first, I thought it was a scam, because I have been called for some widow's empowerment in the past which turned out to be a scam.But with Living Afresh Foundation it is different, I just want to say thank you for changing my story.
+                    ”
 
                   </p>
-                  <p class="mt-2 font-medium">Mrs Tonye Nwachwukwo, <br/> Enugu,<em>Medical</em></p>
+                  <p class="mt-2 font-medium">Esther Effiong Edem, <br/> <em></em></p>
                 </div>
               </div>
               <div class="card pt-4 p-2 lg-mb-0 mt-4 lg-mt-0 w-full lg-w-1/3">
@@ -729,57 +583,85 @@
                     loading="lazy"
                   />
                   <p class="card-decription text-cw-black text-xs lg-px-1">
-                    “After my husband died, I 
-                    thought there was nothing 
-                    more to be here for. But 
-                    had to hang in because of 
-                    the children just getting 
-                    by without help, until I 
-                    met the LAF team in Lafia 
-                    and now I am inspired and 
-                    empowered to dream 
-                    again. Yes! My dreams are 
-                    valid”
+                    “My mouth can not explain how grateful I am to this organization (Living Afresh Foundation). Since the death of my husband, they have been zero financial support. But since the empowerment, I can say that the lord has enhanced the work of my hands. Thanks to Living Afresh Foundation.
+                    ”
 
                   </p>
-                  <p class="mt-2 font-medium">Mrs Benedicta Nkor, <br/>Akwa-Ibom, <em>Legal Suppor</em></p>
+                  <p class="mt-2 font-medium">Miriam Moses Kalu <br/><em>Financial Support/Business Management</em></p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="donate-form-container mt-3" style="text-align: center;">
+              <div class="donate-form-nested-container">
+                <div class="donate-form-nested-wrapper">
+                  <a
+                  class="button button--cw-spring-med-green mb-2 homepage-primary-join-spring-button"
+                  href="interventions.php"
+                  >More testimonials</a
+                >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-cw-secondary-300 pb-2 pt-5">
+            <h2 class="font-heading h35 my-2 lg-mt-2-5 text-center">
+              Get Involved
+            </h2>
+            <div
+              class="cta-section max-w-lg flex flex-wrap mx-auto border border-solid border-grey-30 rounded bg-cw-white p-4"
+            >
+            <div
+            class="cta-item cta-check md-px-2 mx-auto mb-3 lg-mb-4 md-w-1/2 lg-w-1/3"
+          >
+            <img
+              class="cta-icon"
+              src="https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F3sWyYeZbBuTnrvfnCURdke%2F2614a4c73c4d6c8cdc8e2bb47769d75a%2Fcheck.svg?ixlib=rails-4.1.0&amp;auto=format&amp;w=1&amp;s=d859aa3b4f7595dad8728123a907df0d"
+              loading="lazy"
+            />
+            <h5 class="h70">Send us a donation</h5>
+            <p class="p40 my-1 lg-px-2">
+              Reach out and touch somebody’s life today. Give somebody hope and comfort by donating to the foundation
+            </p>
+            <div class="cta-link p40">
+              <a data-behavior="Modal" href="#cheques">Transfers & Cheques</a> &nbsp; &nbsp; <a data-behavior="Modal" href="#online">Online</a>
+
+            </div>
+          </div>
+              <div
+                class="cta-item cta-iho md-px-2 mx-auto mb-3 lg-mb-4 md-w-1/2 lg-w-1/3"
+              >
+                <img
+                  class="cta-icon"
+                  src="https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F6QGw4koywW7Ndl0SBjzthP%2Fb52d288fef437fe656c5c58177f23379%2Fiho.svg?ixlib=rails-4.1.0&amp;auto=format&amp;w=1&amp;s=e1f6a9d0306d923ce4f0db89ff2ea83e"
+                  loading="lazy"
+                />
+                <h5 class="h70">Partner with us</h5>
+                <p class="p40 my-1 lg-px-2">Support us in helping LAF beneficiaries alleviate the challenges associated with losing a spouse
+                </p>
+                <div class="cta-link p40">
+                  <a href="contact.php">Get in touch</a>
+                </div>
+              </div>
+              <div
+                class="cta-item cta-tributary md-px-2 mx-auto mb-3 lg-mb-4 md-w-1/2 lg-w-1/3"
+              >
+                <img
+                  class="cta-icon"
+                  src="https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F7pAnMzouthbzq0tP58ZU0N%2F0b732e8b758c1074742a8fcd4aba60f0%2Ftributary-people.svg?ixlib=rails-4.1.0&amp;auto=format&amp;w=1&amp;s=ea70b8966d4cdfea35c41a489b4124b0"
+                  loading="lazy"
+                />
+                <h5 class="h70">Volunteer</h5>
+                <p class="p40 my-1 lg-px-2">Are you interested in joining us to provide support, services, and advocacy to individuals who have lost their spouses?.
+                </p>
+                <div class="cta-link p40">
+                  <a href="volunteer.php">Join us</a>
                 </div>
               </div>
             </div>
           </div>
 
-
-          <section class="get-involved-section">
-            <h2>Get Involved</h2>
-            <ul>
-              <li>
-                <h3>Send Us Donations</h3>
-                <p>Reach out and touch somebody’s life today. Give somebody hope and comfort by donating to the foundation</p>
-                <a href="#" class="donate-button" id="book-button">Donate</a>
-                <!-- Pop-up for Transfers & Checks -->
-                <div class="popup">
-                  <h4>Transfers & Checks</h4>
-                  <p>Bank Name: Signature Bank/United Bank of Africa (UBA)</p>
-                  <p>Account Number: 0123456789</p>
-                  <p>Account Name: Living Afresh Foundation</p>
-                  <p>Sort/Swift Code: 076191257</p>
-                </div>
-                <!-- End of Pop-up for Transfers & Checks -->
-                <!-- Link to the Donate Page -->
-                <a href="donate.html" class="online-donation-link">Online</a>
-              </li>
-              <li>
-                <h3>Volunteer</h3>
-                <p>Are you interested in joining us to provide support, services, and advocacy to individuals who have lost their spouses? Please contact us.</p>
-                <a href="contact.html" class="join-us-button">Join Us</a>
-              </li>
-              <li>
-                <h3>Partner With Us</h3>
-                <p>Support us in helping LAF beneficiaries alleviate the challenges associated with losing a spouse</p>
-                <a href="contact.html" class="get-in-touch-button">Get in Touch</a>
-              </li>
-            </ul>
-          </section>
+          
           
         </div>
       </div>
@@ -1190,948 +1072,24 @@
         href="vite/assets/application-14b33728.css"
         media="screen"
       />
-      <script>
-        window.translations = {
-          en: {
-            full_country_name: "United States",
-            flash: {
-              actions: {
-                destroy: {
-                  notice: "%{resource_name} was successfully deleted.",
-                },
-              },
-            },
-            address: {
-              multi_line: {
-                city_state_zip: "Hagerstown, MD 21741-5026",
-                street: "Donation Processing Center, PO Box 5026",
-              },
-            },
-            errors: {
-              messages: {
-                missing_name: "Please provide your first name.",
-                missing_surname: "Please provide your last name.",
-                missing_group_name: "Please provide your group's name.",
-              },
-            },
-            d2p: {
-              virginia_clay: {
-                campaign_info:
-                  "One of our earliest supporters, Virginia\u0026nbsp;Clay, matched September Campaign funds with an additional $1.2 million. The remainder of that donation is funding clean water projects\u0026nbsp;in\u0026nbsp;Ethiopia.",
-                campaign_name: "Virginia Clay",
-              },
-              wallstrom: {
-                campaign_info: "$10,000",
-                campaign_name: "The Wallstrom Family",
-              },
-              info: {
-                published:
-                  "We publish a project when we've approved a final report from our partners and made sure your project is working for the best of the\u0026nbsp;community.",
-                gps: "These are the GPS coordinates of your project, plotted in Google Maps. A GPS (Global Positioning System) coordinate is the exact latitude and longitude of any given point on the Earth’s surface. charity: water uses GPS coordinates to record the location of each water project we fund. Please note: there are many of different formats for GPS. We use degree decimal\u0026nbsp;format.",
-                people_served:
-                  "This is the population of the community that has access to your water\u0026nbsp;project.",
-                project_cost:
-                  "This is the cost of the water project you funded. Costs vary by country and by project type, and depend on a wide range of variables such as the local cost of fuel and cement at the time your project was built. This project’s cost includes any hygiene training or community maintenance models for the project’s\u0026nbsp;sustainability.",
-                local_partner:
-                  "charity: water works with partners in the field to build and implement water projects. Our partners have years of experience. They know the land, the people, the culture and the most appropriate water technology for each area of work. They report this data from the field to help us provide proof of your completed\u0026nbsp;project(s).",
-                project_id:
-                  "This ID is how we track your project in our\u0026nbsp;system.",
-                donation_matched: "A generous donor matched this donation.",
-                rehab:
-                  "Even the best solutions can experience problems. Previously-built water projects can be rendered unusable due to lack of maintenance, environmental conditions, or other extenuating circumstances. When this happens, our local partners look to rehabilitate broken solutions whenever possible, saving both time and money. We also invest in new maintenance models so the communities can prevent future breakdowns. The end result is a restored water point that brings clean water back to the community.",
-              },
-              simplified_project_types: {
-                default: {
-                  long_description: "",
-                  short_description: "n/a",
-                  timeline_description: "",
-                },
-                filter: {
-                  long_description:
-                    "\u003cp\u003eWater filters remove harmful contaminants from source water, making it much safer to drink. Our partners take a number of different variables into account when selecting the right solution for a %{location_type}, and when water filtration is selected as the best solution, they often implement BioSand Filters or Ultrafiltration systems. BioSand Filters are made from layers of sand, gravel, and a biological layer called “biofilm.” When cared for properly, they can last up to 30 years. Ultrafiltration systems utilize a booster pump, strainer, carbon filter, and ultrafiltration membrane to remove 99.99% of bacteria and viruses.\u003c/p\u003e",
-                  short_description: "water filter(s)",
-                  timeline_description:
-                    "layers of sand and microbacterial film filter out contaminants.",
-                },
-                handpump: {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                },
-                latrine: {
-                  long_description:
-                    "\u003cp\u003eAfter our partner works with the %{location_type} to assess their specific needs and determine the best solution, the %{location_type} will receive a water point paired with sanitation facilities, which include a block of latrines or toilets and handwashing facilities.\u003c/p\u003e",
-                  short_description: "water point and sanitation",
-                  timeline_description:
-                    "covered shelters provide safety and privacy for bathroom users.",
-                },
-                rainwater: {
-                  long_description:
-                    "\u003cp\u003eRainwater generally meets drinking water standards. The process of evaporation and condensation naturally remove any particles in the water, like pathogens and dirt, making it safe to drink. Catchment areas can be made from materials like plastic tarps or concrete. A roof can also serve as a catchment area. Rainwater is then channeled into a vessel to be safely stored until ready to be used.\u003c/p\u003e",
-                  short_description: "rainwater harvesting system",
-                  timeline_description:
-                    "gutters on rooftops direct the flow of rainfall into a sanitary holding tank.",
-                },
-                spring_protection: {
-                  long_description:
-                    "\u003cp\u003eSpring protection systems establish a catchment area around the spring to capture clean water as it emerges from the ground. The water is then channeled into a storage tank, where it can be accessed by taps or pipes. This process ensures that clean water stays protected from contaminants and water-borne diseases.\u003c/p\u003e",
-                  short_description: "spring protection system",
-                  timeline_description:
-                    "a system captures and safely stores pure water from a natural spring.",
-                },
-                tap_stand: {
-                  long_description:
-                    "\u003cp\u003eA piped system uses energy to distribute water through a network of pipes. Typically sourced from a spring or protected well, water is piped to a storage tank either by gravity or with a mechanized pump. From the storage tank, the water flows through the piped system to tap stands below.\u003c/p\u003e",
-                  short_description: "piped system tap stand",
-                  timeline_description:
-                    "networks of pipes supply water to different community tap stands.",
-                },
-              },
-              project_types: {
-                "Biosand Filters": {
-                  long_description:
-                    "\u003cp\u003eWater filters remove harmful contaminants from source water, making it much safer to drink. Our partners take a number of different variables into account when selecting the right solution for a %{location_type}, and when water filtration is selected as the best solution, they often implement BioSand Filters or Ultrafiltration systems. BioSand Filters are made from layers of sand, gravel, and a biological layer called “biofilm.” When cared for properly, they can last up to 30 years. Ultrafiltration systems utilize a booster pump, strainer, carbon filter, and ultrafiltration membrane to remove 99.99% of bacteria and viruses.\u003c/p\u003e",
-                  short_description: "water filter(s)",
-                  timeline_description:
-                    "layers of sand and microbacterial film filter out contaminants.",
-                  icon_class: "cw-icon-biosand-filter",
-                },
-                "Deep Borehole": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-drilled-well",
-                },
-                "Deep Borehole (new Well)": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-drilled-well",
-                },
-                "Drilled Borehole": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-drilled-well",
-                },
-                "Drilled Borehole Well": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-drilled-well",
-                },
-                "Drilled borehole with play pump": {
-                  long_description: "",
-                  short_description: "n/a",
-                  timeline_description: "",
-                  icon_class: "cw-icon-drilled-well",
-                },
-                "Drilled Well": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-drilled-well",
-                },
-                "Drilled Well (Rehabilitated)": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-drilled-well",
-                },
-                "Drilling Rig": {
-                  long_description: "",
-                  short_description: "n/a",
-                  timeline_description: "",
-                },
-                "Filtration System": {
-                  long_description: "",
-                  short_description: "n/a",
-                  timeline_description: "",
-                  icon_class: "cw-icon-filtration-system",
-                },
-                "Gravity Flow Water System": {
-                  long_description: "",
-                  short_description: "n/a",
-                  timeline_description: "",
-                  icon_class: "cw-icon-gravity-fed-system",
-                },
-                "Handdug Well (new Well)": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-handdug-well",
-                },
-                "Hand-Dug Well": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-handdug-well",
-                },
-                "Hand-Dug Well (Rehabilitated)": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-handdug-well",
-                },
-                "Handwashing Station": {
-                  long_description: "",
-                  short_description: "n/a",
-                  timeline_description: "",
-                  icon_class: "cw-icon-latrine",
-                },
-                Latrine: {
-                  long_description: "",
-                  short_description: "n/a",
-                  timeline_description: "",
-                  icon_class: "cw-icon-latrine",
-                },
-                "Manually Drilled Well": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-drilled-well",
-                },
-                "Manually Drilled Well (Rehab)": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-drilled-well",
-                },
-                "New Drilled Borehole": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-drilled-well",
-                },
-                "New Hand-dug Well": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-handdug-well",
-                },
-                "New Tap Stand": {
-                  long_description:
-                    "\u003cp\u003eA piped system uses energy to distribute water through a network of pipes. Typically sourced from a spring or protected well, water is piped to a storage tank either by gravity or with a mechanized pump. From the storage tank, the water flows through the piped system to tap stands below.\u003c/p\u003e",
-                  short_description: "piped system tap stand",
-                  timeline_description:
-                    "networks of pipes supply water to different community tap stands.",
-                  icon_class: "cw-icon-tap-system",
-                },
-                Other: {
-                  long_description: "",
-                  short_description: "n/a",
-                  timeline_description: "",
-                  icon_class: "cw-icon-rehab",
-                },
-                "Piped System": {
-                  long_description:
-                    "\u003cp\u003eA piped system uses energy to distribute water through a network of pipes. Typically sourced from a spring or protected well, water is piped to a storage tank either by gravity or with a mechanized pump. From the storage tank, the water flows through the piped system to tap stands below.\u003c/p\u003e",
-                  short_description: "piped system tap stand",
-                  timeline_description:
-                    "networks of pipes supply water to different community tap stands.",
-                  icon_class: "cw-icon-piped-system",
-                },
-                "Piped System - Household Connection": {
-                  long_description:
-                    "\u003cp\u003eA piped system uses energy to distribute water through a network of pipes. Typically sourced from a spring or protected well, water is piped to a storage tank either by gravity or with a mechanized pump. From the storage tank, the water flows through the piped system to tap stands below.\u003c/p\u003e",
-                  short_description: "piped system tap stand",
-                  timeline_description:
-                    "networks of pipes supply water to different community tap stands.",
-                  icon_class: "cw-icon-piped-system",
-                },
-                "Piped System - On-plot": {
-                  long_description:
-                    "\u003cp\u003eA piped system uses energy to distribute water through a network of pipes. Typically sourced from a spring or protected well, water is piped to a storage tank either by gravity or with a mechanized pump. From the storage tank, the water flows through the piped system to tap stands below.\u003c/p\u003e",
-                  short_description: "piped system tap stand",
-                  timeline_description:
-                    "networks of pipes supply water to different community tap stands.",
-                  icon_class: "cw-icon-piped-system",
-                },
-                "Piped System - Rehabilitated Tap Stand": {
-                  long_description:
-                    "\u003cp\u003eA piped system uses energy to distribute water through a network of pipes. Typically sourced from a spring or protected well, water is piped to a storage tank either by gravity or with a mechanized pump. From the storage tank, the water flows through the piped system to tap stands below.\u003c/p\u003e",
-                  short_description: "piped system tap stand",
-                  timeline_description:
-                    "networks of pipes supply water to different community tap stands.",
-                  icon_class: "cw-icon-tap-system",
-                },
-                "Piped System - Tap Stand": {
-                  long_description:
-                    "\u003cp\u003eA piped system uses energy to distribute water through a network of pipes. Typically sourced from a spring or protected well, water is piped to a storage tank either by gravity or with a mechanized pump. From the storage tank, the water flows through the piped system to tap stands below.\u003c/p\u003e",
-                  short_description: "piped system tap stand",
-                  timeline_description:
-                    "networks of pipes supply water to different community tap stands.",
-                  icon_class: "cw-icon-tap-system",
-                },
-                "Piped Water System": {
-                  long_description:
-                    "\u003cp\u003eA piped system uses energy to distribute water through a network of pipes. Typically sourced from a spring or protected well, water is piped to a storage tank either by gravity or with a mechanized pump. From the storage tank, the water flows through the piped system to tap stands below.\u003c/p\u003e",
-                  short_description: "piped system tap stand",
-                  timeline_description:
-                    "networks of pipes supply water to different community tap stands.",
-                  icon_class: "cw-icon-piped-system",
-                },
-                "Pipeline Extension": {
-                  long_description: "",
-                  short_description: "n/a",
-                  timeline_description: "",
-                  icon_class: "cw-icon-gravity-fed-system",
-                },
-                "Pond Sand Filter": {
-                  long_description: "",
-                  short_description: "water filter(s)",
-                  timeline_description:
-                    "layers of sand and microbacterial film filter out contaminants.",
-                  icon_class: "cw-icon-pond-sand-filter",
-                },
-                "Rain Water Collection Tank": {
-                  long_description:
-                    "\u003cp\u003eRainwater generally meets drinking water standards. The process of evaporation and condensation naturally remove any particles in the water, like pathogens and dirt, making it safe to drink. Catchment areas can be made from materials like plastic tarps or concrete. A roof can also serve as a catchment area. Rainwater is then channeled into a vessel to be safely stored until ready to be used.\u003c/p\u003e",
-                  short_description: "rainwater harvesting system",
-                  timeline_description:
-                    "gutters on rooftops direct the flow of rainfall into a sanitary holding tank.",
-                  icon_class: "cw-icon-rainwater-catchment",
-                },
-                "Rain Water Harvesting": {
-                  long_description:
-                    "\u003cp\u003eRainwater generally meets drinking water standards. The process of evaporation and condensation naturally remove any particles in the water, like pathogens and dirt, making it safe to drink. Catchment areas can be made from materials like plastic tarps or concrete. A roof can also serve as a catchment area. Rainwater is then channeled into a vessel to be safely stored until ready to be used.\u003c/p\u003e",
-                  short_description: "rainwater harvesting system",
-                  timeline_description:
-                    "gutters on rooftops direct the flow of rainfall into a sanitary holding tank.",
-                  icon_class: "cw-icon-rainwater-catchment",
-                },
-                "Rainwater Harvesting": {
-                  long_description:
-                    "\u003cp\u003eRainwater generally meets drinking water standards. The process of evaporation and condensation naturally remove any particles in the water, like pathogens and dirt, making it safe to drink. Catchment areas can be made from materials like plastic tarps or concrete. A roof can also serve as a catchment area. Rainwater is then channeled into a vessel to be safely stored until ready to be used.\u003c/p\u003e",
-                  short_description: "rainwater harvesting system",
-                  timeline_description:
-                    "gutters on rooftops direct the flow of rainfall into a sanitary holding tank.",
-                  icon_class: "cw-icon-rainwater-catchment",
-                },
-                "Rainwater Harvesting (Rehabilitated)": {
-                  long_description:
-                    "\u003cp\u003eRainwater generally meets drinking water standards. The process of evaporation and condensation naturally remove any particles in the water, like pathogens and dirt, making it safe to drink. Catchment areas can be made from materials like plastic tarps or concrete. A roof can also serve as a catchment area. Rainwater is then channeled into a vessel to be safely stored until ready to be used.\u003c/p\u003e",
-                  short_description: "rainwater harvesting system",
-                  timeline_description:
-                    "gutters on rooftops direct the flow of rainfall into a sanitary holding tank.",
-                  icon_class: "cw-icon-rainwater-catchment",
-                },
-                "Rainwater Harvesting Tank": {
-                  long_description:
-                    "\u003cp\u003eRainwater generally meets drinking water standards. The process of evaporation and condensation naturally remove any particles in the water, like pathogens and dirt, making it safe to drink. Catchment areas can be made from materials like plastic tarps or concrete. A roof can also serve as a catchment area. Rainwater is then channeled into a vessel to be safely stored until ready to be used.\u003c/p\u003e",
-                  short_description: "rainwater harvesting system",
-                  timeline_description:
-                    "gutters on rooftops direct the flow of rainfall into a sanitary holding tank.",
-                  icon_class: "cw-icon-rainwater-catchment",
-                },
-                "Rehabilitated Well": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-handdug-well",
-                },
-                "Rehabilitated Tap Stand": {
-                  long_description:
-                    "\u003cp\u003eA piped system uses energy to distribute water through a network of pipes. Typically sourced from a spring or protected well, water is piped to a storage tank either by gravity or with a mechanized pump. From the storage tank, the water flows through the piped system to tap stands below.\u003c/p\u003e",
-                  short_description: "piped system tap stand",
-                  timeline_description:
-                    "networks of pipes supply water to different community tap stands.",
-                  icon_class: "cw-icon-tap-system",
-                },
-                Rehabilitation: {
-                  long_description: "",
-                  short_description: "n/a",
-                  timeline_description: "",
-                  icon_class: "cw-icon-rehab",
-                },
-                "Shallow Bore Hole": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-drilled-well",
-                },
-                "Shallow Borehole (new well)": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-drilled-well",
-                },
-                "Shallow Borehole Well": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-drilled-well",
-                },
-                "Solar Pump": {
-                  long_description: "",
-                  short_description: "n/a",
-                  timeline_description: "",
-                  icon_class: "cw-icon-rehab",
-                },
-                "Spring Protection": {
-                  long_description:
-                    "\u003cp\u003eSpring protection systems establish a catchment area around the spring to capture clean water as it emerges from the ground. The water is then channeled into a storage tank, where it can be accessed by taps or pipes. This process ensures that clean water stays protected from contaminants and water-borne diseases.\u003c/p\u003e",
-                  short_description: "spring protection system",
-                  timeline_description:
-                    "a system captures and safely stores pure water from a natural spring.",
-                  icon_class: "cw-icon-spring-protection",
-                },
-                "Spring Protection (Rehabilitated)": {
-                  long_description:
-                    "\u003cp\u003eSpring protection systems establish a catchment area around the spring to capture clean water as it emerges from the ground. The water is then channeled into a storage tank, where it can be accessed by taps or pipes. This process ensures that clean water stays protected from contaminants and water-borne diseases.\u003c/p\u003e",
-                  short_description: "spring protection system",
-                  timeline_description:
-                    "a system captures and safely stores pure water from a natural spring.",
-                  icon_class: "cw-icon-spring-protection",
-                },
-                "Tap Stand": {
-                  long_description:
-                    "\u003cp\u003eA piped system uses energy to distribute water through a network of pipes. Typically sourced from a spring or protected well, water is piped to a storage tank either by gravity or with a mechanized pump. From the storage tank, the water flows through the piped system to tap stands below.\u003c/p\u003e",
-                  short_description: "piped system tap stand",
-                  timeline_description:
-                    "networks of pipes supply water to different community tap stands.",
-                  icon_class: "cw-icon-tap-system",
-                },
-                Toilet: {
-                  long_description: "",
-                  short_description: "n/a",
-                  timeline_description: "",
-                  icon_class: "cw-icon-latrine",
-                },
-                "Tube Well": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-drilled-well",
-                },
-                "Urban Sanitary Complex": {
-                  long_description:
-                    "\u003cp\u003eAfter our partner works with the %{location_type} to assess their specific needs and determine the best solution, the %{location_type} will receive a water point paired with sanitation facilities, which include a block of latrines or toilets and handwashing facilities.\u003c/p\u003e",
-                  short_description: "water point and sanitation",
-                  timeline_description:
-                    "covered shelters provide safety and privacy for bathroom users.",
-                  icon_class: "cw-icon-latrine",
-                },
-                "Water Filter": {
-                  long_description:
-                    "\u003cp\u003eWater filters remove harmful contaminants from source water, making it much safer to drink. Our partners take a number of different variables into account when selecting the right solution for a %{location_type}, and when water filtration is selected as the best solution, they often implement BioSand Filters or Ultrafiltration systems. BioSand Filters are made from layers of sand, gravel, and a biological layer called “biofilm.” When cared for properly, they can last up to 30 years. Ultrafiltration systems utilize a booster pump, strainer, carbon filter, and ultrafiltration membrane to remove 99.99% of bacteria and viruses.\u003c/p\u003e",
-                  short_description: "water filter(s)",
-                  timeline_description:
-                    "layers of sand and microbacterial film filter out contaminants.",
-                  icon_class: "cw-icon-filtration-system",
-                },
-                "Water Filter(s)": {
-                  long_description:
-                    "\u003cp\u003eWater filters remove harmful contaminants from source water, making it much safer to drink. Our partners take a number of different variables into account when selecting the right solution for a %{location_type}, and when water filtration is selected as the best solution, they often implement BioSand Filters or Ultrafiltration systems. BioSand Filters are made from layers of sand, gravel, and a biological layer called “biofilm.” When cared for properly, they can last up to 30 years. Ultrafiltration systems utilize a booster pump, strainer, carbon filter, and ultrafiltration membrane to remove 99.99% of bacteria and viruses.\u003c/p\u003e",
-                  short_description: "water filter(s)",
-                  timeline_description:
-                    "layers of sand and microbacterial film filter out contaminants.",
-                  icon_class: "cw-icon-filtration-system",
-                },
-                "Water Point \u0026 Sanitation": {
-                  long_description:
-                    "\u003cp\u003eAfter our partner works with the %{location_type} to assess their specific needs and determine the best solution, the %{location_type} will receive a water point paired with sanitation facilities, which include a block of latrines or toilets and handwashing facilities.\u003c/p\u003e",
-                  short_description: "water point and sanitation",
-                  timeline_description:
-                    "covered shelters provide safety and privacy for bathroom users.",
-                  icon_class: "cw-icon-latrine",
-                },
-                "Water Point And Sanitation": {
-                  long_description:
-                    "\u003cp\u003eAfter our partner works with the %{location_type} to assess their specific needs and determine the best solution, the %{location_type} will receive a water point paired with sanitation facilities, which include a block of latrines or toilets and handwashing facilities.\u003c/p\u003e",
-                  short_description: "water point and sanitation",
-                  timeline_description:
-                    "covered shelters provide safety and privacy for bathroom users.",
-                  icon_class: "cw-icon-latrine",
-                },
-                "Water Project": {
-                  long_description: "",
-                  short_description: "n/a",
-                  timeline_description: "",
-                  icon_class: "cw-icon-rehab",
-                },
-                "Water Purification System": {
-                  long_description: "",
-                  short_description: "n/a",
-                  timeline_description: "",
-                  icon_class: "cw-icon-filtration-system",
-                },
-                "Water Tower": {
-                  long_description: "",
-                  short_description: "n/a",
-                  timeline_description: "",
-                  icon_class: "cw-icon-water-tower",
-                },
-                "Well With Handpump": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-drilled-well",
-                },
-                "Well with Handpump": {
-                  long_description:
-                    "\u003cp\u003eWells access subsurface aquifers, which are better protected from microbial contamination than surface water and provide a more reliable supply of water during dry seasons and droughts. Construction begins with studies to identify the most suitable location. Once a location is selected and the aquifer is reached, the well is lined, disinfected, tested, and fitted with a handpump to bring water to the surface.\u003c/p\u003e",
-                  short_description: "well with a handpump",
-                  timeline_description:
-                    "which access aquifers to provide reliable clean water throughout the year.",
-                  icon_class: "cw-icon-drilled-well",
-                },
-              },
-            },
-            views: {
-              teams: {
-                default_bio:
-                  "%{team_name} has been part of the charity: water community since %{join_year}.",
-                default_tagline:
-                  "%{team_name} is helping end the water crisis in our lifetime.",
-                welcome_modal: {
-                  subheader:
-                    "Now that you're a member of the team, dollars you raise or donate and Spring members you refer will all contribute to %{team_name}'s Lifetime Impact as well as your own. We can't wait to see what you accomplish\u0026nbsp;together!",
-                },
-              },
-              campaign_form: {
-                new_campaign: {
-                  header: "Start a Fundraiser",
-                  intro:
-                    "Run a fundraising campaign on your public profile to inspire your community. Set a goal, tell the story of your fundraiser, and invite people to support\u0026nbsp;you.",
-                  date_picker_format: "mm/dd/yy",
-                  date_fns_format: "MM/dd/yyyy",
-                  date_fns_edit_format: "MMM dd",
-                  date_parse_format: "yyyy-MM-dd",
-                  submit_button: "Create Fundraiser",
-                  team: {
-                    header: "Start a Team Campaign",
-                    intro:
-                      "Run a fundraising campaign for your team to inspire your community. Set a goal, tell the story of your fundraiser, and invite people to support\u0026nbsp;your team.",
-                    submit_button: "Create Team Campaign",
-                  },
-                },
-                campaign_created: {
-                  header: "Campaign Created!",
-                  intro:
-                    "Thanks for fundraising with us. We've given your profile a makeover and listed a few ways to jumpstart your campaign. First step: set your personal fundraising goal.",
-                },
-              },
-              subscription_management: {
-                resume: {
-                  monthly: {
-                    header: "Resume your monthly\u0026nbsp;giving",
-                    subheader:
-                      "Welcome back! We\u0026apos;re grateful you\u0026apos;ve chosen to resume your monthly gift. Would you like to resume at your most recent amount or choose a different amount to give every month?",
-                    footer:
-                      "Your payment method will be charged when you click \u0026apos;confirm\u0026apos;. Your following monthly gift will be made on \u003cspan className='hide-in-percy'\u003e %{formatted_next_payment_day}\u003c/span\u003e.",
-                  },
-                  annual: {
-                    header: "Resume your membership to The\u0026nbsp;Spring",
-                    subheader:
-                      "Welcome back! We\u0026apos;re grateful you\u0026apos;ve chosen to resume your spring membership. Would you like to resume at your most recent amount or choose a different amount?",
-                    footer:
-                      "Your payment method will **not** be charged when you click \u0026apos;confirm\u0026apos;. Your following annual gift will be made on \u003cspan className='hide-in-percy'\u003e %{formatted_next_payment_day}\u003c/span\u003e.",
-                    unpaid_footer:
-                      "Your payment method will be charged when you click 'confirm'. Your following gift will be made on %{formatted_next_payment_day} (1 year after today).",
-                  },
-                },
-              },
-              country_intercept: {
-                title: "Welcome, UK friend!",
-                message:
-                  "Just so you know, charity: water has expanded into the UK, which means that donations from UK taxpayers are now worth 25% more through Gift Aid (at no cost to\u0026nbsp;you).",
-                stay_button: "Stay in the US",
-                continue_button: "Continue to the UK",
-              },
-              inline_giving_calculator: {
-                text: "Your \u003cspan class='monthly-inline-calc-amount'\u003e%{currency_unit}%{amount}\u003c/span\u003e %{subscription_period} donation can give \u003cspan class='monthly-inline-calc-amount'\u003e%{number_of_people}\u003c/span\u003e people clean water every year. 100% funds water\u0026nbsp;projects.",
-                generic_text:
-                  "Your %{subscription_period} donation will change lives all year long. 100% funds water\u0026nbsp;projects.",
-              },
-              donate_form: {
-                donate: "Donate",
-                donate_annually: "Donate Annually",
-                donate_monthly: "Donate Monthly",
-                per_month: "per\u0026nbsp;month",
-                per_year: "per\u0026nbsp;year",
-                enter_amount: "Enter an amount to give",
-                choose_amount: "Choose an amount to give",
-                give_by_check: "Give by check or stock",
-                give_crypto: "Donate crypto",
-                giving: "Giving",
-                edit_amount: "edit amount",
-                error: "Please fix the errors and try again",
-                postcode: {
-                  error: {
-                    missing_space: "Postcode must include a space",
-                    does_not_start_with_a_letter:
-                      "Postcode must begin with a letter",
-                  },
-                },
-                iho: {
-                  toggle: "Give in honor of someone",
-                  date_picker_format: "mm/d/y",
-                  date_parse_format: "M/dd/yy",
-                  your_honor: "your honor",
-                  honor_of: "honor of",
-                  details: {
-                    honoree_full_name_label: "In Honor Of",
-                    honoree_full_name_placeholder: "Honoree's full name",
-                  },
-                  delivery: { honoree_email_placeholder: "Honoree's email" },
-                  email: {
-                    added:
-                      "An e-card will be sent to %{name} at \u003cspan class='email'\u003e%{email}\u003c/span\u003e",
-                    details: {
-                      header:
-                        "What message should we include with your\u0026nbsp;e-card?",
-                    },
-                    delivery: {
-                      subheader: "Delivery",
-                      header: "Where should we deliver the\u0026nbsp;e‑card?",
-                      action: "Send",
-                    },
-                    preview: {
-                      header:
-                        "Here\u0026#8217;s what we\u0026#8217;ll send\u0026nbsp;to %{name}",
-                    },
-                    design: {
-                      subheader: "Design",
-                      header:
-                        "Customize the look and feel of your\u0026nbsp;e-card",
-                    },
-                  },
-                  print: {
-                    added:
-                      "A printable card addressed to %{name} will be sent to\u0026nbsp;you",
-                    details: {
-                      header:
-                        "What message should we include with your\u0026nbsp;card?",
-                    },
-                    delivery: {
-                      subheader: "Design",
-                      header:
-                        "Customize the look and feel of your\u0026nbsp;card",
-                      action: "Address",
-                    },
-                    preview: {
-                      header:
-                        "Here's what your foldable card will look like\u0026nbsp;assembled.",
-                    },
-                  },
-                },
-                subscription_upsell: {
-                  header: "Would you consider\u0026nbsp;something?",
-                  subheader:
-                    "Your %{period} giving enables us to make long term investments in communities and bring more people clean\u0026nbsp;water.",
-                  annual_label_header: "Make this an annual gift",
-                  annual_label:
-                    "Our recurring giving community, The\u0026nbsp;Spring, are our most impactful and committed supporters. We\u0026apos;ll remind you this time next year when your membership is about to renew.",
-                  monthly_label_header:
-                    "Give %{unit}%{amount} per month instead",
-                  monthly_label:
-                    "Please consider joining our monthly giving community, The Spring. Spring members are our most impactful and committed supporters.",
-                },
-                zipcode: {
-                  placeholder: "Zipcode",
-                  error: "Please enter your zipcode",
-                },
-                submit_button_text: "Next Step",
-                email_error: "Please enter a valid email address",
-                email_placeholder: "Email",
-                subscription_minimum_error:
-                  "The %{subscription_period} minimum donation is $%{amount}",
-                maximum_amount_error:
-                  'We are only able to process up to $%{amount} online. Want to donate more? \u003ca href="mailto:sponsoraproject@charitywater.org"\u003eContact us.\u003c/a\u003e',
-                minimum_amount_error:
-                  "Please enter a valid amount ($%{amount} minimum)",
-                ach_popout_form: {
-                  link_bank_preferred_header:
-                    "Thank you for choosing our preferred payment\u0026nbsp;method.",
-                  link_bank_preferred_text:
-                    "A small group of donors pay our credit card transaction fees so that 100% of your donation can go directly to clean water. By linking your bank instead of paying by card, you're eliminating fees and increasing your\u0026nbsp;impact.",
-                  name_error: "Please enter your first name",
-                  name_placeholder: "First Name",
-                  surname_error: "Please enter your last name",
-                  surname_placeholder: "Last Name",
-                },
-                system_campaign: {
-                  donate_by_check: {
-                    address: {
-                      business_type: "charity: water is a 501 (c)(3)",
-                      ein: "EIN: 22-3936753",
-                    },
-                    donate_by_check: {
-                      body: "Make checks payable to charity: water. If you're donating in honor of someone, sponsoring a water project or want to direct your donation to our operating costs, please write that in the memo of your check.",
-                      label: "Donate by Check",
-                      note: "Unfortunately, we cannot accept donations to The Spring via\u0026nbsp;check. Tax receipts will be mailed within four to six weeks after the donation has been\u0026nbsp;processed.",
-                    },
-                    donate_stock: {
-                      body: "We're able to accept donations in the form of stock, government (including municipal) debt and corporate debt through the Depository Trust Company (DTC). For security, settlement and reduced paperwork, electronic transfer through the DTC is preferred. This can be arranged from most brokerage accounts.",
-                      label: "Donate Stock",
-                      note: "Unfortunately, we cannot accept donations to The Spring via\u0026nbsp;stock. Please contact \u003ca href='mailto:info@charitywater.org'\u003einfo@charitywater.org\u003c/a\u003e for more information on making a stock\u0026nbsp;donation.",
-                    },
-                    international_giving: {
-                      body: "charity: water is a registered charity in the UK. To make a tax-efficient donation in GBP, visit \u003ca href='https://charitywateruk.org'\u003echaritywateruk.org\u003c/a\u003e. For other international donations, we accept bank issued money orders in USD. Money orders should be made payable to charity: water and can be mailed to the address below. For donations over $6,000, we also accept wire transfers; email %{email} for more\u0026nbsp;information.",
-                      label: "International Giving",
-                      note: "Please note, only donations made by eligible US taxpayers may be tax-deductible.",
-                    },
-                    label: "Other Ways to Give",
-                  },
-                },
-              },
-              admin: {
-                campaign: {
-                  edit: {
-                    campaign_template_hint:
-                      "Campaigns with matched donations can not be moved to other campaign templates.",
-                    validations: {
-                      parent:
-                        "The campaign must remain a parent if it has any children",
-                      parent_campaign_id:
-                        "The campaign cannot be both a parent and a child",
-                      team_joinable:
-                        "The campaign must be a parent to be joinable",
-                    },
-                  },
-                },
-              },
-              gift_aid_settings: {
-                on_text:
-                  "Because you've enabled Gift Aid, every donation you give to charity: water will be increased by 25%. The money claimed from Gift Aid goes toward operational costs that help us grow.",
-                off_text:
-                  "Through Gift Aid you can increase your monthly donations by 25%. The money claimed from Gift Aid goes toward operational costs that help us grow.",
-                disclaimer:
-                  'By turning Gift Aid on, I confirm I am a UK tax payer, and I would like charity: water to treat all of my donations as Gift Aid donations moving forward. I understand that if I pay less income tax and/or Capital Gains tax than the amount of Gift Aid claimed on all my donations in that year, it is my responsibility to pay any difference. To give permission to charity: water to retroactively claim all past donations (up to 4 years) reach out to\u0026nbsp;\u003ca href="mailto:support@charitywater.org"\u003esupport@charitywater.org\u003c/a\u003e',
-              },
-            },
-            site: {
-              label: "charity: water",
-              description:
-                "charity: water is a non-profit organization bringing clean, safe drinking water to people in developing countries. 100% of public donations go to water projects.",
-              keywords:
-                "water wells, charity water, charity, give, water, water for africa, africa, india, south america, clean water, safe water, access to clean water, digging wells, clean water for africa, safe drinking water, drinking water for poor",
-            },
-          },
-          "en-GB": {
-            full_country_name: "United Kingdom",
-            views: {
-              campaign_form: {
-                new_campaign: {
-                  date_picker_format: "dd/mm/yy",
-                  date_fns_format: "dd/MM/yyyy",
-                  date_fns_edit_format: "dd MMM",
-                },
-              },
-              country_intercept: {
-                title: "Looks like you're in the United States...",
-                message:
-                  "This is our UK website. If you'd like to make a tax-deductible donation in US dollars, head over to our US website instead!",
-                stay_button: "Stay in the UK",
-                continue_button: "Continue to the US",
-              },
-              donate_form: {
-                iho: {
-                  toggle: "Give in honour of someone",
-                  date_picker_format: "d/mm/y",
-                  date_parse_format: "dd/M/yy",
-                  your_honor: "your honour",
-                  honor_of: "honour of",
-                  details: {
-                    honoree_full_name_label: "In Honour Of",
-                    honoree_full_name_placeholder: "Honouree's full name",
-                  },
-                  delivery: { honoree_email_placeholder: "Honouree's email" },
-                  email: {
-                    design: {
-                      header:
-                        "Customise the look and feel of your\u0026nbsp;e-card",
-                    },
-                  },
-                  print: {
-                    delivery: {
-                      header:
-                        "Customise the look and feel of your\u0026nbsp;card",
-                    },
-                  },
-                },
-                gift_aid: {
-                  opt_in:
-                    "Click below to claim Gift Aid and invest £%{amount} in our operational costs like trips to the field and\u0026nbsp;staff\u0026nbsp;salaries.",
-                  confirmation: {
-                    donation:
-                      "By checking above, I confirm I am a UK taxpayer and I would like charity: water to treat this donation as a Gift Aid donation. I understand that if I pay less income tax and/or Capital Gains tax than the amount of Gift Aid claimed on all my donations in that year, it is my responsibility to pay any\u0026nbsp;difference.",
-                    subscription:
-                      "Yes, I am a UK taxpayer and I would like charity: water to treat this donation and future donations associated with this subscription as Gift Aid donations. I understand that if I pay less income tax and/or Capital Gains tax than the amount of Gift Aid claimed on all my donations in that year, it is my responsibility to pay any\u0026nbsp;difference.",
-                  },
-                },
-                maximum_amount_error:
-                  'We are only able to process up to £%{amount} online. Want to donate more? \u003ca href="mailto:sponsoraproject@charitywater.org"\u003eContact us.\u003c/a\u003e',
-                minimum_amount_error:
-                  "Please enter a valid amount (£%{amount} minimum)",
-                subscription_minimum_error:
-                  "The %{subscription_period} minimum donation is £%{amount}",
-              },
-              gift_aid_settings: {
-                on_text:
-                  "Because you've enabled Gift Aid, every donation you give to charity: water will be increased by 25%. The money claimed from Gift Aid goes toward operational costs that help us grow.",
-                off_text:
-                  "Through Gift Aid you can increase your monthly donations by 25%. The money claimed from Gift Aid goes toward operational costs that help us grow.",
-                disclaimer:
-                  'By turning Gift Aid on, I confirm I am a UK tax payer, and I would like charity: water to treat all of my donations as Gift Aid donations moving forward. I understand that if I pay less income tax and/or Capital Gains tax than the amount of Gift Aid claimed on all my donations in that year, it is my responsibility to pay any difference. To give permission to charity: water to retroactively claim all past donations (up to 4 years) reach out to\u0026nbsp;\u003ca href="mailto:support@charitywater.org"\u003esupport@charitywater.org\u003c/a\u003e',
-              },
-            },
-          },
-          fr: {
-            views: {
-              donate_form: {
-                enter_amount: "Confirmez votre montant à donner",
-                choose_amount: "Confirmez votre montant à donner",
-              },
-            },
-          },
-        };
-        window.cookieDomain = ".charitywater.org";
-        window.locale = "en";
-        window.railsEnv = "production";
-        window.recaptchaV2SiteKey = "6LeenTEUAAAAAHPWTu78t3HP_UwZf_4JGThNJiRH";
-      </script>
       <script
         async=""
         src="../26d5c5b95593436fb88ae7c78d39f4f2.js.ubembed.com/index.html"
       ></script>
-      <script type="text/javascript">
-        (window.analytics = window.analytics || []),
-          (window.analytics.methods = [
-            "identify",
-            "group",
-            "track",
-            "page",
-            "pageview",
-            "alias",
-            "ready",
-            "on",
-            "once",
-            "off",
-            "trackLink",
-            "trackForm",
-            "trackClick",
-            "trackSubmit",
-          ]),
-          (window.analytics.factory = function (t) {
-            return function () {
-              var a = Array.prototype.slice.call(arguments);
-              return a.unshift(t), window.analytics.push(a), window.analytics;
-            };
-          });
-        for (var i = 0; i < window.analytics.methods.length; i++) {
-          var key = window.analytics.methods[i];
-          window.analytics[key] = window.analytics.factory(key);
-        }
-        (window.analytics.load = function (t) {
-          if (!document.getElementById("analytics-js")) {
-            var a = document.createElement("script");
-            (a.type = "text/javascript"),
-              (a.id = "analytics-js"),
-              (a.async = !0),
-              (a.src =
-                ("https:" === document.location.protocol
-                  ? "https://"
-                  : "http://") +
-                "segmentcdn.charitywater.org/analytics.js/v1/" +
-                t +
-                "/analytics.min.js");
-            var n = document.getElementsByTagName("script")[0];
-            n.parentNode.insertBefore(a, n);
-          }
-        }),
-          (window.analytics.SNIPPET_VERSION = "2.0.9"),
-          window.analytics.load("Xxmh1wiwuOK1Iph89eC32B9ttJrrqkMq");
+  
 
-        window.analytics.ready(() => {
-          window.analytics.register({
-            name: "Filter Out Null Properties",
-            version: "0.1.0",
-            type: "enrichment",
-            load: () => Promise.resolve(),
-            isLoaded: () => true,
-            page: (ctx) => {
-              ctx.updateEvent(
-                "properties",
-                filterOutNullProperties(ctx.event.properties)
-              );
-              return ctx;
-            },
-            track: (ctx) => {
-              ctx.updateEvent(
-                "properties",
-                filterOutNullProperties(ctx.event.properties)
-              );
-              return ctx;
-            },
-          });
-        });
-      </script>
-
-      <!-- JavaScript to show/hide modal -->
 <script>
-  const termsLink = document.getElementById("termsLink");
-  const termsModal = document.getElementById("termsModal");
-  const closeModal = document.getElementsByClassName("close-modal")[0];
-
-  termsLink.addEventListener("click", function () {
-      termsModal.style.display = "block";
+  // Initialize Slick Carousel
+  $(document).ready(function(){
+    $('.testimonial-slider').slick({
+      slidesToShow: 3, // Adjust the number of cards shown at a time
+      slidesToScroll: 1,
+      infinite: true,
+      dots: true, // You can remove this if you don't want pagination dots
+      autoplay: true,
+      autoplaySpeed: 3000 // Adjust the autoplay speed
+    });
   });
-
-  closeModal.addEventListener("click", function () {
-      termsModal.style.display = "none";
-  });
-</script>
-
-<script type="text/javascript">
-$('#paypal').click(function() {
-  fbq('track', 'Purchase', {currency: "USD", value: 75.00});
-});
-
- $('#bankTransfer').click(function() {
-  fbq('track', 'Purchase', {currency: "USD", value: 75.00});
-});
 </script>
     </div>
   </body>
