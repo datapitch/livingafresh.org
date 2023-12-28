@@ -1,58 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="IE=Edge, chrome=1" http-equiv="X-UA-Compatible" />
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <title>Living Afresh Foundation |</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <link href="index.html" rel="canonical" />
-   
-    <meta property="og:site_name" content="living afresh foundation" />
-    <meta property="og:title" content="living afresh africa : Uplifting the lives of those who have lost a spouse" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.livingafresh.org/" />
-    <meta content="all" name="robots" />
-    <meta content="living afresh foundation" name="apple-mobile-web-app-title" />
-
-    <!-- FAVICONS -->
-    <link href="vite/assets/favicon.png" rel="icon" sizes="196x196"/>
-    <link href="vite/assets/favicon.png" rel="apple-touch-icon" sizes="196x196" />
-    <link href="vite/assets/favicon-180.png" rel="icon" sizes="180x180"/>
-    <link href="vite/assets/favicon-180.png" rel="apple-touch-icon" sizes="180x180" />
-    <link href="vite/assets/favicon-152.png" rel="icon" sizes="152x152" />
-    <link href="vite/assets/favicon-152.png" rel="apple-touch-icon" sizes="152x152"/>
-    <link href="vite/assets/favicon-72.png" rel="icon" sizes="72x72" />
-    <link href="vite/assets/favicon-72.png" rel="apple-touch-icon" sizes="72x72" />
-    <link href="vite/assets/favicon-57.png" rel="icon" sizes="57x57" />
-    <link href="vite/assets/favicon-57.png" rel="apple-touch-icon" sizes="57x57"/>
-    <link color="#000000" href="vite/assets/apple-pin-favicon.svg" rel="mask-icon" />
-    <link href="vite/assets/favicon.png" rel="shortcut icon" sizes="196x196"/>
-
-    <!-- FONTS -->
-    <link as="font" crossorigin="" href="vite/assets/proximanova-regular-webfont-9833f86e.woff2" rel="preload" type="font/woff2"/>
-    <link as="font" crossorigin="" href="vite/assets/proximanova-semibold-webfont-a7fc8b79.woff2" rel="preload" type="font/woff2" />
-    <link as="font" crossorigin="" href="vite/assets/KazimirText-Medium_web-bf0f5b71.woff2" rel="preload" type="font/woff2"/>
-    <link as="font" crossorigin="" href="cdn.icomoon.io/46248/CWIcons/cw-icons.woff2?8daf7v" rel="preload" type="font/woff2" />
-    
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="vite/assets/fonts-a858d8c6.css" media="screen,print" />
-    <link rel="stylesheet" href="vite/assets/base-fe01e855.css" media="screen,print" />
-    <link rel="stylesheet" href="vite/assets/print-fd516205.css" media="print" />
-    <link rel="stylesheet" href="cdn.icomoon.io/46248/CWIcons/style-cf.css" media="screen,print"/>
-    <link rel="stylesheet" href="style.css" media="screen,print"/>
-    <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  
-  <!-- Slick Carousel CSS -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-  
-  <!-- Slick Carousel JS -->
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<?php
+   $pageTitle = 'Home';
+  include ('partials/header.php');
+?>
   <style>
     /* Additional styles for the circle and arrow */
     .blink-arrow-container {
@@ -111,6 +60,26 @@
       text-align: center;
     }
 
+    
+    /* Styles for the modal container */
+    #volunteer-modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      min-height: 560px;
+      background-color: #f1f9fb;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+      z-index: 999;
+      text-align: center;
+    }
+
+
     /* Styles for the overlay background */
     #overlay {
       display: none;
@@ -122,7 +91,17 @@
       background: rgba(0, 0, 0, 0.9);
       z-index: 998;
     }
-
+    /* Styles for the overlay background */
+    #overlay2 {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 998;
+    }
     /* Styles for the close button */
     #closeBtn {
       position: absolute;
@@ -295,7 +274,7 @@
                 <div class="hero-btn">
                   <ul style="list-style: none; padding: 0; margin: 1rem 0;"> <!-- Add some styling to remove default list styles -->
                     <li class="mobile-donate button-links" style="display: inline; margin-right: 20px;"> <!-- Add display: inline; and margin-right to make links inline -->
-                      <a href="volunteer.php" style="text-decoration: none; background-color:  #e9e0e0; padding: 4px 2rem; font-weight: 400; color: #191a19; border-radius: 3px; box-shadow: 3px 3px 2px #f0f0">Volunteer</a>
+                      <a href="#" id="volunteerBtn" style="text-decoration: none; background-color:  #e9e0e0; padding: 4px 2rem; font-weight: 400; color: #191a19; border-radius: 3px; box-shadow: 3px 3px 2px #f0f0">Volunteer</a>
                     </li>
                     <li class="mobile-donate button-links" style="display: inline;"> <!-- Add display: inline; to make links inline -->
                       <a href="#" id="donateBtn" style="text-decoration: none; background-color:  #e9e0e0;padding: 4px 2rem; font-weight: 400; color: #191a19; border-radius: 3px; box-shadow: 3px 3px 2px #f0f0">Donate</a>
@@ -353,8 +332,79 @@
               </div>
             </div>
 
-         
-        </div>  
+          <!-- Volunteer Modal Container -->
+<div id="overlay2"></div>
+<div id="volunteer-modal">
+    <!-- Close button -->
+    <button id="closeBtn" onclick="closeModal()">X</button>
+
+    <!-- Add your modal content here -->
+    <h2 class="mt-2 font-heading h35 my-2 lg-mt-2-5 text-center">Volunteer Sign-Up</h2>
+    <p>Make a meaningful impact in someone's life by volunteering for the Living Afresh Foundation programs. Your time and dedication can bring hope and comfort to those in need.</p>
+    <div class="featured-spring w-full md-mr-2 p-2 rounded relative mt-2 bg-cw-white border border-solid border-grey-30">
+        <div class="md-p-1">
+            <p class="p-2">
+                <b>Kindly complete the form below</b>
+            </p>
+            <hr>
+
+            <!-- Volunteer Sign-up Form -->
+            <form action="process_volunteer.php" method="post">
+                <input type="text" id="volunteer_name" name="volunteer_name" required placeholder="Full Name" style="margin-bottom: 10px;">
+                <input type="email" id="volunteer_email" name="volunteer_email" required placeholder="Email" style="margin-bottom: 10px;">
+                <input type="text" id="volunteer_phone" name="volunteer_phone" required placeholder="Mobile Number" style="margin-bottom: 10px;">
+                <select id="volunteer_location" name="volunteer_location" required>
+                    <option value="" disabled selected>State of Recidence</option>
+                    <option value="Abia">Abia</option>
+                    <option value="Adamawa">Adamawa</option>
+                    <option value="Akwa Ibom">Akwa Ibom</option>
+                    <option value="Anambra">Anambra</option>
+                    <option value="Bauchi">Bauchi</option>
+                    <option value="Bayelsa">Bayelsa</option>
+                    <option value="Benue">Benue</option>
+                    <option value="Borno">Borno</option>
+                    <option value="Cross River">Cross River</option>
+                    <option value="Delta">Delta</option>
+                    <option value="Ebonyi">Ebonyi</option>
+                    <option value="Edo">Edo</option>
+                    <option value="Ekiti">Ekiti</option>
+                    <option value="Enugu">Enugu</option>
+                    <option value="Gombe">Gombe</option>
+                    <option value="Imo">Imo</option>
+                    <option value="Jigawa">Jigawa</option>
+                    <option value="Kaduna">Kaduna</option>
+                    <option value="Kano">Kano</option>
+                    <option value="Katsina">Katsina</option>
+                    <option value="Kebbi">Kebbi</option>
+                    <option value="Kogi">Kogi</option>
+                    <option value="Kwara">Kwara</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Nasarawa">Nasarawa</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Ogun">Ogun</option>
+                    <option value="Ondo">Ondo</option>
+                    <option value="Osun">Osun</option>
+                    <option value="Oyo">Oyo</option>
+                    <option value="Plateau">Plateau</option>
+                    <option value="Rivers">Rivers</option>
+                    <option value="Sokoto">Sokoto</option>
+                    <option value="Taraba">Taraba</option>
+                    <option value="Yobe">Yobe</option>
+                    <option value="Zamfara">Zamfara</option>
+                    <option value="FCT">Federal Capital Territory (FCT)</option>
+                </select>
+
+            <hr>
+
+            <p class="pt-2">
+            <button type="submit" class="button button--outline-black">Join Us</button>
+            </p>
+            </form>
+
+        </div>
+    </div>
+</div>
+
         <div class="mx-2">
           <div class="alt-homepage-content">
             <div class="trust-banner-mobile-spacing md--mt-6"></div>
@@ -702,347 +752,8 @@
         </div>
       </div>
     
-      <footer class="cw-footer no-top-border">
-        <div
-          class="mailing-list-and-info w-full bg-grey-5 text-center flex flex-col border-b border-r border-l border-solid border-0 border-grey-30 rounded-b lg-flex-row lg-text-left items-center"
-        >
-          <div
-            class="optional-text normal-case pb-2 lg-pb-0 text-cw-black lg-w-1/3"
-          >
-            <h6 class="h70">Join the LAF Community </h6>
-            <p class="p40">Stay up-to-date with the work Living Afresh Foundation (LAF) is doing</p>
-          </div>
-          <div class="infosite-mailing-list-form">
-            <form
-              class="simple_form w-full mt-3"
-              id="mailing-list-form"
-              data-behavior="RateLimitedRecaptchaForm StoreUtmParams AnalyticsId"
-              data-with-credentials="true"
-              data-store-utm-params-model="mailing_list_subscriber"
-              action=""
-              accept-charset="UTF-8"
-              data-remote="true"
-              method="post"
-            >
-              <div class="name-email-wrapper md-flex">
-                <div
-                  class="mailing-input-names md-flex md-justify-center max-w-xs mx-auto"
-                >
-                  <div class="mailing-input-wrapper name first md-flex-1">
-                    <label class="for-screen-readers-only" for="user_name"
-                      >First Name</label
-                    ><input
-                      class="string required border-b-0 md-border-b md-border-r-0 rounded-none"
-                      required="required"
-                      data-parsley-error-message="Please provide your first name"
-                      aria-required="true"
-                      placeholder="First name"
-                      maxlength="255"
-                      size="255"
-                      type="text"
-                      name="user[name]"
-                      id="user_name"
-                    />
-                  </div>
-                  <div
-                    class="mailing-input-wrapper surname mt-0 md-mt-0 md-flex-1"
-                  >
-                    <label class="for-screen-readers-only" for="user_surname"
-                      >Last Name</label
-                    ><input
-                      class="string required rounded-none"
-                      required="required"
-                      data-parsley-error-message="Please provide your last name"
-                      aria-required="true"
-                      placeholder="Last name"
-                      maxlength="255"
-                      size="255"
-                      type="text"
-                      name="user[surname]"
-                      id="user_surname"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="mailing-input-wrapper email mt-1 max-w-xs mx-auto second"
-                >
-                  <label class="for-screen-readers-only" for="user_email"
-                    >Email</label
-                  ><input
-                    class="string email required rounded-none"
-                    required="required"
-                    data-parsley-email-tld=""
-                    data-parsley-error-message="Please provide a valid email address"
-                    aria-required="true"
-                    placeholder="Email"
-                    type="email"
-                    value=""
-                    name="user[email]"
-                    id="user_email"
-                  />
-                </div>
-                <button
-                  name="button"
-                  type="submit"
-                  class="button button button--expand mailing-list-sign-up-button max-w-xs mx-auto mt-1"
-                >
-                  Subscribe
-                </button>
-              </div>
-              <input
-                value="us"
-                autocomplete="off"
-                type="hidden"
-                name="user[country]"
-                id="user_country"
-              /><input
-                name="mailing_list_subscriber[main_list]"
-                value="true"
-                autocomplete="off"
-                type="hidden"
-                id="user_main_list"
-              /><input
-                value="footer"
-                autocomplete="off"
-                type="hidden"
-                name="user[place]"
-                id="user_place"
-              /><input
-                name="offer"
-                value="newsletter"
-                id="offer"
-                autocomplete="off"
-                type="hidden"
-              /><input
-                name="thank_you_flash_message"
-                autocomplete="off"
-                type="hidden"
-                id="user_thank_you_flash_message"
-              /><input
-                name="thank_you_page_path"
-                value="/mailing-list-subscribers/thank-you"
-                autocomplete="off"
-                type="hidden"
-                id="user_thank_you_page_path"
-              /><input
-                name="use_inline_thank_you_block"
-                autocomplete="off"
-                type="hidden"
-                id="user_use_inline_thank_you_block"
-              /><input
-                name="send_default_welcome_emails"
-                value="true"
-                autocomplete="off"
-                type="hidden"
-                id="user_send_default_welcome_emails"
-              /><input
-                name="custom_welcome_journey_id"
-                autocomplete="off"
-                type="hidden"
-                id="user_custom_welcome_journey_id"
-              /><input
-                name="offer_journey_id"
-                autocomplete="off"
-                type="hidden"
-                id="user_offer_journey_id"
-              /><input
-                name="analytics_id"
-                data-analytics-id="true"
-                autocomplete="off"
-                type="hidden"
-                id="user_analytics_id"
-              />
-              <div data-component="RecaptchaBadge" data-props="{}"></div>
-            </form>
-            <div
-              data-component="RecaptchaText"
-              data-props='{"classes":"mt-1"}'
-            ></div>
-          </div>
-        </div>
-        <div
-          class="cw-footer-top-row border-b border-solid border-0 border-grey-30 my-3 us-toggle"
-        >
-          <ul class="mt-0 mb-4 w-1/2 md-w-1/4">
-            <li class="cw-footer-header">Get to know us</li>
-            <li><a href="about.php">About Us</a></li>
-            <li><a href="about.php#board">Our Board of Trustees</a></li>
-            <li><a href="">Careers</a></li>
-          </ul>
-          <ul class="mt-0 mb-4 w-1/2 md-w-1/4">
-            <li class="cw-footer-header">Connect with us</li>
-            <li><a href="contact.php">Contact Us</a></li>
-            <li>
-              <a href="#"
-                >Help center</a
-              >
-            </li>
-            <li><a href="#">Recommend a Beneficiary</a></li>
-            
-          </ul>
-          <ul class="mt-0 mb-2 w-1/2 md-w-1/4">
-            <li class="cw-footer-header">Get Involved</li>
-            <li><a href="#">Volunteer</a></li>
-            <li><a href="#">Partners with us</a></li>
-            <li><a href="#">Sponsor our event</a></li>
-         
-          </ul>
-          <ul class="mt-0 mb-4 w-1/2 md-w-1/4">
-            <li class="cw-footer-header">Donate</li>
-            <li><a href="#">Donate Online</a></li>
-            <li>
-              <a href="#">Cheques & Transfers</a>
-            </li>
-            <li>
-              <a href="#">Give in Someone&#39;s Honor</a>
-            </li>
-          </ul>
-        </div>
-        <div
-          class="row flex flex-col lg-flex-row mt-0 footer-social-and-country-wrapper"
-        >
-          <div class="w-full footer-social-wrapper lg-w-3/4">
-            <div class="row">
-              <ul
-                class="mx-auto justify-center lg-justify-start flex footer-social-wrapper"
-              >
-                <li class="cw-footer-social-twitter mr-2">
-                  <a class="text-base" href="https://twitter.com/livingafreshFDN"
-                    ><span class="cw-icon-twitter icn"
-                      ><span class="for-screen-readers-only"
-                        >Twitter</span
-                      ></span
-                    ></a
-                  >
-                </li>
-                <li class="cw-footer-social-facebook mr-2">
-                  <a
-                    class="text-base"
-                    href="https://www.facebook.com/livingafreshFDN"
-                    ><span class="cw-icon-facebook icn"
-                      ><span class="for-screen-readers-only"
-                        >Facebook</span
-                      ></span
-                    ></a
-                  >
-                </li>
-                <li class="cw-footer-social-instagram mr-2">
-                  <a
-                    class="text-base"
-                    href="www.instagram.com/livingafreshFDN"
-                    ><span class="cw-icon-instagram icn"
-                      ><span class="for-screen-readers-only"
-                        >Instagram</span
-                      ></span
-                    ></a
-                  >
-                </li>
-                <li class="cw-footer-social-snapchat mr-2">
-                  <a
-                    class="text-base"
-                    href="www.snapchat.com/add/livingafreshFDN"
-                    ><span class="cw-icon-snapchat icn"
-                      ><span class="for-screen-readers-only"
-                        >Snapchat</span
-                      ></span
-                    ></a
-                  >
-                </li>
-                <li class="cw-footer-social-youtube mr-2">
-                  <a
-                    class="text-base"
-                    href="www.youtube.com/user/livingafreshFDN"
-                    ><span class="cw-icon-youtube icn"
-                      ><span class="for-screen-readers-only"
-                        >Youtube</span
-                      ></span
-                    ></a
-                  >
-                </li>
-                <li class="cw-footer-social-linkedin">
-                  <a href="www.linkedin.com/company/livingafreshFDN"
-                    ><span class="cw-icon-linkedin icn"
-                      ><span class="for-screen-readers-only"
-                        >Linkedin</span
-                      ></span
-                    ></a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="row mt-1">
-              <ul
-                class="my-0 mt-0 flex justify-center lg-justify-start flex-col md-flex-row text-center cw-footer-secondary-links"
-              >
-                <li class="pl-0"><a href="privacy">Privacy policy</a></li>
-                <li class="px-1 hidden md-inline-block footer-last-bullet">
-                  •
-                </li>
-                <li class="footer-email-signup-link">
-                  <a class="cw-footer-emph" href="mailing_list_subscribers/new"
-                    >Get our emails</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="mx-auto mt-2 lg-mt-0 w-full max-w-xs footer-country-container lg-w-1/4"
-          >
-            
-          </div>
-        </div>
-        <div
-          class="row text-center lg-text-left mt-2 flex flex-col lg-flex-row lg-justify-between items-center"
-        >
-          <div class="lg-mt-0">
-            <p
-              class="cw-footer-fine-print h80 text-grey-50 normal-case us-toggle"
-            >
-              Living Afresh Foundtion is a registered non-profit organization with the Corporate Affairs Commission of Nigeria.
-            </p>
-            <p
-              class="cw-footer-fine-print h80 text-grey-50 normal-case us-toggle"
-            >
-              100% of public donations go directly to fund interventions.
-            </p>
-          </div>
-          
-        </div>
-        <div class="row text-center lg-text-left mt-2">
-          <p
-            class="cw-footer-fine-print h80 mt-1 text-grey-50 normal-case us-toggle"
-          >
-            <span
-              >&copy; 2023 | Living Afresh Foundation, Block 5, No. 2, Bria Street, Abuja, FCT, Nigeria | RC 444151656. <br/>Our mission is build a network of like-minded individuals and organizations dedicated to helping LAF beneficiaries alleviate the multi-facetted challenges associated with losing a spouse. </span
-            >
-          </p>
-        </div>
-      </footer>
-      <script src="cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-      <script src="cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
-      <script
-        src="vite/assets/application-e8f7a172.js"
-        crossorigin="anonymous"
-        type="module"
-      ></script>
-      <link
-        rel="modulepreload"
-        href="vite/assets/mobx.esm-a9f82a4a.js"
-        as="script"
-        crossorigin="anonymous"
-      /><link
-        rel="stylesheet"
-        href="vite/assets/application-14b33728.css"
-        media="screen"
-      />
-      <script
-        async=""
-        src="../26d5c5b95593436fb88ae7c78d39f4f2.js.ubembed.com/index.html"
-      ></script>
-  
-
-    </div>
+    <!-- Include footer -->
+    <?php require 'partials/footer.php'; ?>
 
     <script>
       // Function to open the modal
@@ -1050,15 +761,24 @@
         document.getElementById('overlay').style.display = 'block';
         document.getElementById('donate-modal').style.display = 'block';
       }
+
+        // Function to open the modal
+        function openModalV() {
+        document.getElementById('overlay2').style.display = 'block';
+        document.getElementById('volunteer-modal').style.display = 'block';
+      }
     
       // Function to close the modal
       function closeModal() {
         document.getElementById('overlay').style.display = 'none';
+        document.getElementById('overlay2').style.display = 'none';
         document.getElementById('donate-modal').style.display = 'none';
+        document.getElementById('volunteer-modal').style.display = 'none';
       }
     
       // Event listener for the Donate button
       document.getElementById('donateBtn').addEventListener('click', openModal);
+      document.getElementById('volunteerBtn').addEventListener('click', openModalV);
     </script>
   </body>
 </html>
