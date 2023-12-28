@@ -404,6 +404,7 @@
         </div>
     </div>
 </div>
+        </div>
 
         <div class="mx-2">
           <div class="alt-homepage-content">
