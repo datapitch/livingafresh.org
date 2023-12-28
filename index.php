@@ -79,6 +79,24 @@
       text-align: center;
     }
 
+     /* Styles for the modal container */
+     #contact-modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 650px;
+      min-height: 560px;
+      background-color: #f1f9fb;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+      z-index: 999;
+      text-align: center;
+    }
+
 
     /* Styles for the overlay background */
     #overlay {
@@ -102,6 +120,20 @@
       background: rgba(0, 0, 0, 0.9);
       z-index: 998;
     }
+
+     /* Styles for the overlay background */
+     #overlay3 {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 998;
+    }
+
+
     /* Styles for the close button */
     #closeBtn {
       position: absolute;
@@ -230,7 +262,7 @@
                 <a href="mailto:hello@livingafresh.org">hello@livingafresh.org</a>
               </li>
               <li class="has-dropdown button-links" >
-                <a href="contact.php" style="background-color: #06af3e; border: solid 2px #06af3e; padding: 4px 1rem; font-weight: 600;">Contact us</a>
+                <a href="#" id="contactBtn" style="background-color: #06af3e; border: solid 2px #06af3e; padding: 4px 1rem; font-weight: 600;">Contact us</a>
               </li>
             </ul>
             <ul class="mycw-nav">
@@ -325,7 +357,7 @@
                   <a
                     class="button button--outline-black"
                     href="#"
-                    >pay online</a
+                    >Give online</a
                   >
                 </p>
                 </div>
@@ -333,78 +365,128 @@
             </div>
 
           <!-- Volunteer Modal Container -->
-<div id="overlay2"></div>
-<div id="volunteer-modal">
-    <!-- Close button -->
-    <button id="closeBtn" onclick="closeModal()">X</button>
+          <div id="overlay2"></div>
+            <div id="volunteer-modal">
+                <!-- Close button -->
+                <button id="closeBtn" onclick="closeModal()">X</button>
 
-    <!-- Add your modal content here -->
-    <h2 class="mt-2 font-heading h35 my-2 lg-mt-2-5 text-center">Volunteer Sign-Up</h2>
-    <p>Make a meaningful impact in someone's life by volunteering for the Living Afresh Foundation programs. Your time and dedication can bring hope and comfort to those in need.</p>
-    <div class="featured-spring w-full md-mr-2 p-2 rounded relative mt-2 bg-cw-white border border-solid border-grey-30">
-        <div class="md-p-1">
-            <p class="p-2">
-                <b>Kindly complete the form below</b>
-            </p>
-            <hr>
+                <!-- Add your modal content here -->
+                <h2 class="mt-2 font-heading h35 my-2 lg-mt-2-5 text-center">Volunteer Sign-Up</h2>
+                <p>Make a meaningful impact in someone's life by volunteering for the Living Afresh Foundation programs. Your time and dedication can bring hope and comfort to those in need.</p>
+                <div class="featured-spring w-full md-mr-2 p-2 rounded relative mt-2 bg-cw-white border border-solid border-grey-30">
+                    <div class="md-p-1">
+                        <p class="p-2">
+                            <b>Kindly complete the form below</b>
+                        </p>
+                        <hr>
 
-            <!-- Volunteer Sign-up Form -->
-            <form action="process_volunteer.php" method="post">
-                <input type="text" id="volunteer_name" name="volunteer_name" required placeholder="Full Name" style="margin-bottom: 10px;">
-                <input type="email" id="volunteer_email" name="volunteer_email" required placeholder="Email" style="margin-bottom: 10px;">
-                <input type="text" id="volunteer_phone" name="volunteer_phone" required placeholder="Mobile Number" style="margin-bottom: 10px;">
-                <select id="volunteer_location" name="volunteer_location" required>
-                    <option value="" disabled selected>State of Recidence</option>
-                    <option value="Abia">Abia</option>
-                    <option value="Adamawa">Adamawa</option>
-                    <option value="Akwa Ibom">Akwa Ibom</option>
-                    <option value="Anambra">Anambra</option>
-                    <option value="Bauchi">Bauchi</option>
-                    <option value="Bayelsa">Bayelsa</option>
-                    <option value="Benue">Benue</option>
-                    <option value="Borno">Borno</option>
-                    <option value="Cross River">Cross River</option>
-                    <option value="Delta">Delta</option>
-                    <option value="Ebonyi">Ebonyi</option>
-                    <option value="Edo">Edo</option>
-                    <option value="Ekiti">Ekiti</option>
-                    <option value="Enugu">Enugu</option>
-                    <option value="Gombe">Gombe</option>
-                    <option value="Imo">Imo</option>
-                    <option value="Jigawa">Jigawa</option>
-                    <option value="Kaduna">Kaduna</option>
-                    <option value="Kano">Kano</option>
-                    <option value="Katsina">Katsina</option>
-                    <option value="Kebbi">Kebbi</option>
-                    <option value="Kogi">Kogi</option>
-                    <option value="Kwara">Kwara</option>
-                    <option value="Lagos">Lagos</option>
-                    <option value="Nasarawa">Nasarawa</option>
-                    <option value="Niger">Niger</option>
-                    <option value="Ogun">Ogun</option>
-                    <option value="Ondo">Ondo</option>
-                    <option value="Osun">Osun</option>
-                    <option value="Oyo">Oyo</option>
-                    <option value="Plateau">Plateau</option>
-                    <option value="Rivers">Rivers</option>
-                    <option value="Sokoto">Sokoto</option>
-                    <option value="Taraba">Taraba</option>
-                    <option value="Yobe">Yobe</option>
-                    <option value="Zamfara">Zamfara</option>
-                    <option value="FCT">Federal Capital Territory (FCT)</option>
-                </select>
+                        <!-- Volunteer Sign-up Form -->
+                        <form action="process_volunteer.php" method="post">
+                            <input type="text" id="volunteer_name" name="volunteer_name" required placeholder="Full Name" style="margin-bottom: 10px;">
+                            <input type="email" id="volunteer_email" name="volunteer_email" required placeholder="Email" style="margin-bottom: 10px;">
+                            <input type="text" id="volunteer_phone" name="volunteer_phone" required placeholder="Mobile Number" style="margin-bottom: 10px;">
+                            <select id="volunteer_location" name="volunteer_location" required>
+                                <option value="" disabled selected>State of Recidence</option>
+                                <option value="Abia">Abia</option>
+                                <option value="Adamawa">Adamawa</option>
+                                <option value="Akwa Ibom">Akwa Ibom</option>
+                                <option value="Anambra">Anambra</option>
+                                <option value="Bauchi">Bauchi</option>
+                                <option value="Bayelsa">Bayelsa</option>
+                                <option value="Benue">Benue</option>
+                                <option value="Borno">Borno</option>
+                                <option value="Cross River">Cross River</option>
+                                <option value="Delta">Delta</option>
+                                <option value="Ebonyi">Ebonyi</option>
+                                <option value="Edo">Edo</option>
+                                <option value="Ekiti">Ekiti</option>
+                                <option value="Enugu">Enugu</option>
+                                <option value="Gombe">Gombe</option>
+                                <option value="Imo">Imo</option>
+                                <option value="Jigawa">Jigawa</option>
+                                <option value="Kaduna">Kaduna</option>
+                                <option value="Kano">Kano</option>
+                                <option value="Katsina">Katsina</option>
+                                <option value="Kebbi">Kebbi</option>
+                                <option value="Kogi">Kogi</option>
+                                <option value="Kwara">Kwara</option>
+                                <option value="Lagos">Lagos</option>
+                                <option value="Nasarawa">Nasarawa</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Ogun">Ogun</option>
+                                <option value="Ondo">Ondo</option>
+                                <option value="Osun">Osun</option>
+                                <option value="Oyo">Oyo</option>
+                                <option value="Plateau">Plateau</option>
+                                <option value="Rivers">Rivers</option>
+                                <option value="Sokoto">Sokoto</option>
+                                <option value="Taraba">Taraba</option>
+                                <option value="Yobe">Yobe</option>
+                                <option value="Zamfara">Zamfara</option>
+                                <option value="FCT">Federal Capital Territory (FCT)</option>
+                            </select>
 
-            <hr>
+                        <hr>
 
-            <p class="pt-2">
-            <button type="submit" class="button button--outline-black">Join Us</button>
-            </p>
-            </form>
+                        <p class="pt-2">
+                        <button type="submit" class="button button--outline-black">Join Us</button>
+                        </p>
+                        </form>
 
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+       <!-- Contact us Modal Container -->
+        <div id="overlay3">
+            <div id="contact-modal">
+                <!-- Close button -->
+                <button id="closeBtn" onclick="closeModal()">X</button>
+
+                <!-- Add your modal content here -->
+                <h2 class="mt-2 font-heading h35 my-2 lg-mt-2-5 text-center">Contact us</h2>
+                <p>Choose the appropriate inquiry category and fill out the form below to get in touch with us.</p>
+                <div class="featured-spring w-full md-mr-2 p-2 rounded relative mt-2 bg-cw-white border border-solid border-grey-30">
+                    <div class="md-p-1">
+                          <h2 class="h50 leading-tight">
+                          Contact Details
+                          <hr>
+                        </h2>
+                        <p class="p-2">
+                        <b>PLot 2, Block 5, Bria Street, Wuse 2, Abuja FCT, Nigeria. <br/></b>
+                        
+                        +2348249249294 <b>|</b> hello@livingafresh.org <b>| Socials: </b>@livingafreshFDN<br/>
+                        
+                        </p>
+
+                        <!-- Contact Us Form -->
+                        <form action="process_contact.php" method="post">
+                            <input type="text" id="contact_name" name="contact_name" required placeholder="Full Name" style="margin-bottom: 10px;">
+                            <input type="email" id="contact_email" name="contact_email" required placeholder="Email" style="margin-bottom: 10px;">
+                            <select id="inquiry_category" name="inquiry_category" required style="margin-bottom: 10px;">
+                                <option value="" disabled selected>Select Inquiry Category</option>
+                                <option value="Donation">Donation</option>
+                                <option value="Sponsorship">Sponsorship</option>
+                                <option value="Partnership">Partnership</option>
+                                <option value="Volunteering">Volunteering</option>
+                                <option value="Career">Career</option>
+                                <option value="General">General</option>
+                            </select>
+                            
+                            <!-- Added textarea for message -->
+                            <textarea id="message" name="message" required placeholder="Your Message" rows="3" style="margin-bottom: 10px;"></textarea>
+
+
+                        <p class="pt-2">
+                            <button type="submit" class="button button--outline-black">Submit Inquiry</button>
+                        </p>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
         </div>
+
 
         <div class="mx-2">
           <div class="alt-homepage-content">
@@ -768,18 +850,28 @@
         document.getElementById('overlay2').style.display = 'block';
         document.getElementById('volunteer-modal').style.display = 'block';
       }
+
+       // Function to open the modal
+       function openModalC() {
+        document.getElementById('overlay3').style.display = 'block';
+        document.getElementById('contact-modal').style.display = 'block';
+      }
     
       // Function to close the modal
       function closeModal() {
         document.getElementById('overlay').style.display = 'none';
         document.getElementById('overlay2').style.display = 'none';
+        document.getElementById('overlay3').style.display = 'none';
         document.getElementById('donate-modal').style.display = 'none';
         document.getElementById('volunteer-modal').style.display = 'none';
+        document.getElementById('contact-modal').style.display = 'none';
       }
     
       // Event listener for the Donate button
       document.getElementById('donateBtn').addEventListener('click', openModal);
       document.getElementById('volunteerBtn').addEventListener('click', openModalV);
+      document.getElementById('contactBtn').addEventListener('click', openModalC);
+
     </script>
   </body>
 </html>
