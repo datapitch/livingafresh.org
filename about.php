@@ -121,7 +121,7 @@
                      <h1 class="hero--header font-heading h10">LAF: Uplifting the lives of individuals who have lost a spouse through eight critical intervention areas.</h1>
                   </div>
                   <div class="hero--media">
-                     <div class="hero--media-asset-wrapper"><img src="../cw-contentful-assets.imgix.net/https_/images.ctfassets.net/wvozpes63uc8/4Dmy9MGWxDARcFkLULpod0/b6da29b7704de492c72f5ca7b5b91499/JS_20170926_0406f728.jpg?ixlib=rails-4.1.0&amp;auto=format&amp;w=1920&amp;s=581b2c91f43e3ace357d74276c4e7b93" loading="lazy" /></div>
+                     <div class="hero--media-asset-wrapper"><img src="vite/assets/_images/about-home.png?ixlib=rails-4.1.0&amp;auto=format&amp;w=1920&amp;s=581b2c91f43e3ace357d74276c4e7b93" loading="lazy" /></div>
                   </div>
                </div>
             </section>
