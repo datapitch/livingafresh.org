@@ -805,7 +805,7 @@ Core values: Accountability, Commitment to goals, Continuous development, Innova
                         <div class="max-w-xs mt-1 mx-auto">
                            <p class="md-px-4 mx-auto">We&rsquo;re hiring! Explore our openings and join the&nbsp;team.</p>
                         </div>
-                        <div class="md-flex mt-2 justify-center"><a class="block" href="about/jobs.html">Careers</a><span class="show-for-medium-up mx-2 text-cw-navy">&bull;</span><a class="block mt-2 md-mt-0" href="about/internships">Internships</a></div>
+                        <div class="md-flex mt-2 justify-center"><a class="block" href="#">Careers</a><span class="show-for-medium-up mx-2 text-cw-navy">&bull;</span><a class="block mt-2 md-mt-0" href="#">Internships</a></div>
                      </div>
                   </div>
                </div>
