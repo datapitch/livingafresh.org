@@ -1,3 +1,4 @@
+<?php $pageTile = '';?>
 <!DOCTYPE html>
 <html lang="en">
 
