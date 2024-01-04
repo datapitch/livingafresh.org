@@ -128,7 +128,7 @@
             <section class="row mt-4 md-flex px-2 md-items-center">
                <div class="md-text-left md-flex-1">
                   <h2 class="text-kazimir h35 leading-snug">Connecting beneficiaries to support, services and advocacy to improve their lives</h2>
-                  <p class="mt-2 leading-snug">Living Afresh Foundation (LAF) was formally incorporated in 2020 after two years of informal, active interventions in the lives of our pioneer network of over 100 individuals. To date (2023) our 
+                  <p class="mt-2 leading-snug">Living Afresh Foundation (LAF) was formally incorporated in 2020 after two years of informal, active interventions in the lives of our pioneer network of over 100 individuals. To date our 
 Foundation has uplifted over 300 individuals across three regions in Nigeria. We are determined to accelerate our efforts and keep expanding our reach in order to provide succor to a critical mass 
 within the shortest possible time.</p>
 
@@ -178,7 +178,7 @@ targeted, impactful and sustainable.</p>
                         <h3 class="info-stat-header font-heading">8/3</h3>
                         <p class="info-stat-text">Active in 8 states amd 3 regions in Nigeria <a class="icn cw-icon-question-sign" data-behavior="Modal" href="#stat-info-3"></a></p>
                         <div class="hidden" id="stat-info-3">
-                           <h4 class="title">Active in 8 states amd 3 regions in Nigeria</h4>
+                           <h4 class="title">Active in 8 states and 3 regions in Nigeria</h4>
                            <div class="inner">
                               <p class="p30 mt-2"></p>
                            </div>
@@ -251,7 +251,7 @@ supportive and sustainable outcomes.</p>
                </div>
                <div class="w-full md-flex">
                   <div class="hidden md-block w-1/4"><img class="w-full pr-nudge object-cover object-center h-full max-h-full" src="../cw-contentful-assets.imgix.net/https_/images.ctfassets.net/wvozpes63uc8/2bRHGjGqZCGG5NaSkzXF6p/51cc17a108fc7a2b695df1b2034552ff/about_trust_banner_leftc67f.jpg?ixlib=rails-4.1.0&amp;auto=format&amp;w=1200&amp;s=07a133c5a1a1502e94ab323fd57ba2a7" loading="lazy" /></div>
-                  <div class="bg-cw-blue p-2 mb-nudge md-mb-0 md-flex md-flex-col justify-center md-w-1/2">
+                  <div class="bg-cw-green p-2 mb-nudge md-mb-0 md-flex md-flex-col justify-center md-w-1/2">
                      <h4 class="h40 mt-1 mb-2 mx-2 text-cw-white">Ready support what LAF is doing?</h4>
                      <p class="p30 mx-3 mb-2 text-cw-white">Every ₦50,000 can empower one family, lead to education children, etc.</p>
                      <div class="div"><a class="button button--outline-white my-1" href="#" id="donateBtn">Give today</a></div>
@@ -795,7 +795,7 @@ Core values: Accountability, Commitment to goals, Continuous development, Innova
                   </div>
                </div>
             </section>
-            <section class="mt-4 mb-7 py-3 px-2 lg-bg-cw-accent-200">
+            <!-- <section class="mt-4 mb-7 py-3 px-2 lg-bg-cw-accent-200">
                <div class="row">
                   <div class="md-flex items-center justify-center">
                      <div class="mb-3 md-mb-0 md-flex-1"><img class="block w-full" src="https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F6tOei9DSfKzWifNmXNkvQC%2F5a5dbc0427eb576a4c8d5faff78e9a6c%2F_careers-illo-compressed.svg?ixlib=rails-4.1.0&amp;auto=format&amp;w=2000&amp;s=ababf75794054b731ea601b198691b89" loading="lazy" /></div>
@@ -809,7 +809,7 @@ Core values: Accountability, Commitment to goals, Continuous development, Innova
                      </div>
                   </div>
                </div>
-            </section>
+            </section> -->
          </div>
          <div data-component="CountryIntercept" data-props="{&quot;continueUrl&quot;:&quot;/uk/about&quot;,&quot;countryToDetect&quot;:&quot;GB&quot;}"></div>
    

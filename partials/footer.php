@@ -295,7 +295,7 @@
             <p
               class="cw-footer-fine-print h80 text-grey-50 normal-case us-toggle"
             >
-              Living Afresh Foundtion is a registered non-profit organization with the Corporate Affairs Commission of Nigeria.
+              Living Afresh Foundation is a registered non-profit organization with the Corporate Affairs Commission of Nigeria.
             </p>
             <p
               class="cw-footer-fine-print h80 text-grey-50 normal-case us-toggle"

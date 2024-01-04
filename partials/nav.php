@@ -1,45 +1,42 @@
- <!-- Mobile Navigation canvas -->
- <aside class="right-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li class="cw-home">
-          <a href="/">
-            <span class="icn living-afresh-icon"></span>
-            <span class="cw-text">Living Afresh Foundation</span>
-          </a>
-        </li>
-        <li><a href="about.php">About Us</a></li>
-        <li><a href="#">Interventions</a></li>
-        <li><a href="#">Volunteer</a></li>
-        <li> <a href="#">Sponsor a Project</a></li>
-        <li><a href="#">Resources</a></li>
-        <li class="has-form user-access">
-          <a class="button" href="login.php">Sign in</a>
-        </li>
-      </ul>
-    </aside>
+  <aside class="right-off-canvas-menu">
+         <ul class="off-canvas-list">
+            <li class="cw-home"><a href="/uk"><span class="icn cw-icon-jerrycan"></span><span class="cw-text">charity: water</span></a></li>
+            <li><a href="/uk/get-involved">Take Action</a></li>
+            <li><a href="/uk/fundraise">Fundraise for Clean Water</a></li>
+            <li><a href="/uk/donate/water-project-sponsorship">Sponsor a Water Project</a></li>
+            <li><a href="/uk/about">About Us</a></li>
+            <li><a href="/uk/global-water-crisis">Why Water?</a></li>
+            <li><a href="https://www.charitywater.org/account/login">Sign in</a></li>
+            <li class="user-access pb-0"><a class="button" href="/uk/donate">Give</a></li>
+            <li class="user-access pb-0"><a class="button" href="/uk/donate/the-spring">Join the Spring</a></li>
+         </ul>
+      </aside>
     <div class="wrapper">
       <div class="fixed pl-2 pb-2 fixed bottom-0 z-10"></div>
       <div class="cta-nudge fixed z-highest-index">
         
       </div>
-
+     
     
       <nav class="nav-bar invert-large-up" data-off-canvas="">
 
           <!-- Mobile header with hamburger -->
         <div id="logo">
           <img src="vite/assets/_images/logo2.png" alt="">
+          <ul>
+          </ul>
         </div>
         <section class="nav-bar-section">
           <div class="left-side">
             <ul class="logo-area">
               <li class="logo"></li>
-              <li class="mobile-donate button-links">
-                <a href="donate.php">Donate</a>
+              <li class="mobile-donate button-links sponsor-button donate-link bg-transparent">
+                <a href="#" id="donateBtnMobile" style="color: #fff" >Donate</a>
               </li>
               <li class="offcanvas-open-link off-canvas-toggle">
                 <a><span class="cw-icon-reorder icn"></span></a>
               </li>
+
             </ul>
 
               <!-- Main Navigation-->
@@ -52,7 +49,7 @@
               <li class="has-dropdown">
                 <span class="absolute bg-transparent z-10 nav-hover-extender"></span>
                 <span class="flex items-center dropdown-parent-link">
-                  <a class="transition-opacity relative z-20" href="/about">About us</a>
+                  <a class="transition-opacity relative z-20" href="about.php">About us</a>
                   <span class="w-1 block"></span><span class="h80 icn cw-icon-caret-down"></span>
                 </span>
                 <span class="dropdown bg-cw-white border border-solid border-cw-secondary-100 leading-normal left-0 rounded super-dropdown-container">
