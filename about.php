@@ -122,7 +122,7 @@
                      <h1 class="hero--header font-heading h10">LAF: Uplifting the lives of individuals who have lost a spouse through eight critical intervention areas.</h1>
                   </div>
                   <div class="hero--media">
-                     <div class="hero--media-asset-wrapper"><img src="../cw-contentful-assets.imgix.net/https_/images.ctfassets.net/wvozpes63uc8/4Dmy9MGWxDARcFkLULpod0/b6da29b7704de492c72f5ca7b5b91499/JS_20170926_0406f728.jpg?ixlib=rails-4.1.0&amp;auto=format&amp;w=1920&amp;s=581b2c91f43e3ace357d74276c4e7b93" loading="lazy" /></div>
+                     <div class="hero--media-asset-wrapper"><img src="vite/assets/_images/LAF-about.png?ixlib=rails-4.1.0&amp;auto=format&amp;w=1920&amp;s=581b2c91f43e3ace357d74276c4e7b93" loading="lazy" /></div>
                   </div>
                </div>
             </section>
@@ -251,16 +251,16 @@ supportive and sustainable outcomes.</p>
                   </div>
                </div>
                <div class="w-full md-flex">
-                  <div class="hidden md-block w-1/4"><img class="w-full pr-nudge object-cover object-center h-full max-h-full" src="../cw-contentful-assets.imgix.net/https_/images.ctfassets.net/wvozpes63uc8/2bRHGjGqZCGG5NaSkzXF6p/51cc17a108fc7a2b695df1b2034552ff/about_trust_banner_leftc67f.jpg?ixlib=rails-4.1.0&amp;auto=format&amp;w=1200&amp;s=07a133c5a1a1502e94ab323fd57ba2a7" loading="lazy" /></div>
-                  <div class="bg-cw-blue p-2 mb-nudge md-mb-0 md-flex md-flex-col justify-center md-w-1/2">
+                  <div class="hidden md-block w-1/4"><img class="w-full pr-nudge object-cover object-center h-full max-h-full" src="vite/assets/_images/support-1.png?ixlib=rails-4.1.0&amp;auto=format&amp;w=1200&amp;s=07a133c5a1a1502e94ab323fd57ba2a7" loading="lazy" /></div>
+                  <div class="bg-cw-green p-2 mb-nudge md-mb-0 md-flex md-flex-col justify-center md-w-1/2">
                      <h4 class="h40 mt-1 mb-2 mx-2 text-cw-white">Ready support what LAF is doing?</h4>
                      <p class="p30 mx-3 mb-2 text-cw-white">Every ₦50,000 can empower one family, lead to education children, etc.</p>
                      <div class="div"><a class="button button--outline-white my-1" href="#" id="donateBtn">Give today</a></div>
                   </div>
                   <div class="flex md-w-1/4">
-                     <div class="md-hidden block w-1/2"><img class="w-full pr-nudge object-cover object-center h-full" src="../cw-contentful-assets.imgix.net/https_/images.ctfassets.net/wvozpes63uc8/2bRHGjGqZCGG5NaSkzXF6p/51cc17a108fc7a2b695df1b2034552ff/about_trust_banner_leftc67f.jpg?ixlib=rails-4.1.0&amp;auto=format&amp;w=1200&amp;s=07a133c5a1a1502e94ab323fd57ba2a7" loading="lazy" /></div>
-                     <div class="md-hidden block w-1/2"><img class="w-full object-cover object-center h-full" src="../cw-contentful-assets.imgix.net/https_/images.ctfassets.net/wvozpes63uc8/4m9P4eYzQNOBdPHNTq4ZO/4884c75be24fe3a5aaa3b7cd6f2594ae/Rectangle_1844d075.jpg?ixlib=rails-4.1.0&amp;auto=format&amp;w=1200&amp;fm=png&amp;s=e8ead2bbb855ab3da4875ae8a0898b75" loading="lazy" /></div>
-                     <div class="hidden md-block"><img class="w-full md-pl-nudge object-cover object-center h-full" src="../cw-contentful-assets.imgix.net/https_/images.ctfassets.net/wvozpes63uc8/1HnihBcvnykCayq9tL9hc3/d6f9a4d52b075649395a343862422bc5/about_trust_banner_right85c8.jpg?ixlib=rails-4.1.0&amp;auto=format&amp;w=1200&amp;s=b6617a67599d3c316b4e2dae2623832e" loading="lazy" /></div>
+                     <div class="md-hidden block w-1/2"><img class="w-full pr-nudge object-cover object-center h-full" src="vite/assets/_images/support-2.png?ixlib=rails-4.1.0&amp;auto=format&amp;w=1200&amp;s=07a133c5a1a1502e94ab323fd57ba2a7" loading="lazy" /></div>
+                     <div class="md-hidden block w-1/2"><img class="w-full object-cover object-center h-full" src="vite/assets/_images/support-2.png?ixlib=rails-4.1.0&amp;auto=format&amp;w=1200&amp;fm=png&amp;s=e8ead2bbb855ab3da4875ae8a0898b75" loading="lazy" /></div>
+                     <div class="hidden md-block"><img class="w-full md-pl-nudge object-cover object-center h-full" src="vite/assets/_images/support-2.png?ixlib=rails-4.1.0&amp;auto=format&amp;w=1200&amp;s=b6617a67599d3c316b4e2dae2623832e" loading="lazy" /></div>
                   </div>
                </div>
             </section>
@@ -466,7 +466,7 @@ supportive and sustainable outcomes.</p>
                <div class="lg-flex">
                   <div class="lg-flex-1">
                      <div class="max-w-sm mx-auto lg-ml-0 lg-text-left mb-3 px-2">
-                        <h2 class="text-kazimir h40">Board of Directors</h2>
+                        <h2 class="text-kazimir h40" id="board">Board of Directors</h2>
                      </div>
                      <div class="text-left hidden lg-block px-2">
                         <div class="lg-flex">
@@ -520,7 +520,7 @@ supportive and sustainable outcomes.</p>
                            <div class="swiper-slide h-auto" data-name="Michael">
                               <div class="px-2 lg-pl-4 py-3 lg-text-left lg-flex lg-items-center slide-bg-wrapper h-full lg--ml-4">
                                  <div class="lg-flex lg-items-start lg-pb-3 lg-pr-4">
-                                    <img class="block rounded-full mx-auto mb-2 lg-mb-0 object-cover" width="100" height="100" src="../cw-contentful-assets.imgix.net/https_/images.ctfassets.net/wvozpes63uc8/5QkAHjB7WYfWMlJq6sM5Ly/5f16bcb0cbd1b8970b5c80350e20aabc/Michael-Wilkersona6bf.jpg?ixlib=rails-4.1.0&amp;auto=format&amp;w=200&amp;s=8186602986bd8cba6e05a21e07a9034b" loading="lazy" />
+                                    <img class="block rounded-full mx-auto mb-2 lg-mb-0 object-cover" width="100" height="100" src="vite/assets/_images/mr-george.png?ixlib=rails-4.1.0&amp;auto=format&amp;w=200&amp;s=8186602986bd8cba6e05a21e07a9034b" loading="lazy" />
                                     <div class="lg-flex-1 lg-ml-2">
                                        <h4 class="h50">Mr George Inyangette II</h4>
                                        <p class="text-xs mt-5px">Chair</p>
