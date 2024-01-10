@@ -709,7 +709,21 @@
           
         </div>
       </div>
-    
+      <section class="mt-4 mb-7 py-3 px-2 lg-bg-cw-accent-200">
+               <div class="row">
+                  <div class="md-flex items-center justify-center">
+                     <div class="mb-3 md-mb-0 md-flex-1"><img class="block w-full" src="https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F6tOei9DSfKzWifNmXNkvQC%2F5a5dbc0427eb576a4c8d5faff78e9a6c%2F_careers-illo-compressed.svg?ixlib=rails-4.1.0&amp;auto=format&amp;w=2000&amp;s=ababf75794054b731ea601b198691b89" loading="lazy" /></div>
+                     <div class="mt-3 md-flex-1 md-ml-4">
+                        <span class="block mb-2 text-eyebrow-cw-black">Our Program</span>
+                        <h2 class="text-kazimir h35 balance-text mx-auto leading-snug">View our 2023 report</h2>
+                        <div class="max-w-xs mt-1 mx-auto">
+                           <p class="md-px-4 mx-auto">Here's a summary of our acitivies and impact in the year 2023.</p>
+                        </div>
+                        <div class="md-flex mt-2 justify-center"><a class="block" href="downloads/LAF-2023-report.pdf.pdf" target="_blank">See Report</a><span class="show-for-medium-up mx-2 text-cw-navy">&bull;</span>
+                     </div>
+                  </div>
+               </div>
+            </section>
     <!-- Include footer -->
     <?php require 'partials/footer.php'; ?>
 
