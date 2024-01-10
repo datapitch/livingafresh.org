@@ -92,8 +92,8 @@
                   <span class="block flex-1 py-3 px-3 grid items-center justify-center gap-4 bg-grey-5 rounded-r"><a
                     class="block bg-cw-white relative p-2 normal-case tracking-normal text-xs whitespace-normal text-center hover-bg-cw-white rounded" href="about">
                     <span class="absolute w-full h-full border border-solid border-cw-secondary-100 super-link-bg rounded"></span>
-                    <span class="block text-cw-black relative z-20">We've put general information about LAF in a brochure</span>
-                    <span class="block mt-2 text-cw-navy underline relative z-20 uppercase tracking-wide super-box-link-anchor font-medium">Download here</span></a>
+                    <span class="block text-cw-black relative z-20">We've put general information about LAF in a brochure</span></a>
+                    <span class="block mt-2 text-cw-navy underline relative z-20 uppercase tracking-wide super-box-link-anchor font-medium"> <a href="../downloads/LAF-brochure.pdf.pdf" target="_blank" style="color: #000">Download here</span></a>
                   </span>
                   
               </li>

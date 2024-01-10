@@ -328,7 +328,7 @@
                           <hr>
                         </h2>
                         <p class="p-2">
-                        <b>PLot 2, Block 5, Bria Street, Wuse 2, Abuja FCT, Nigeria. <br/></b>
+                        <b>Plot 2, Block 5, Bria Street, Wuse 2, Abuja FCT, Nigeria. <br/></b>
                         
                         +2348249249294 <b>|</b> hello@livingafresh.org <b>| Socials: </b>@livingafreshFDN<br/>
                         
@@ -404,7 +404,7 @@
                         </div>
                         <a
                           class="button button--cw-spring-med-green mb-2 homepage-primary-join-spring-button"
-                          href="/about"
+                          href="/about.php"
                           >Know More</a
                         >
                        
